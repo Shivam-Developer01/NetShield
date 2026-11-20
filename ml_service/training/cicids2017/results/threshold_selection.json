@@ -1,0 +1,196 @@
+{
+  "cicids2017": {
+    "dataset": "CICIDS2017",
+    "validation_samples": 64000,
+    "selected_threshold": 0.4,
+    "selected_f1": 0.9976371308016876,
+    "grid_results": [
+      {
+        "threshold": 0.05,
+        "attack_recall": 0.99663,
+        "attack_fnr": 0.00337,
+        "benign_fpr": 0.00109,
+        "attack_precision": 0.9952,
+        "binary_f1": 0.99592,
+        "alert_volume_pct": 18.57
+      },
+      {
+        "threshold": 0.1,
+        "attack_recall": 0.99663,
+        "attack_fnr": 0.00337,
+        "benign_fpr": 0.00077,
+        "attack_precision": 0.99663,
+        "binary_f1": 0.99663,
+        "alert_volume_pct": 18.54
+      },
+      {
+        "threshold": 0.15,
+        "attack_recall": 0.99638,
+        "attack_fnr": 0.00362,
+        "benign_fpr": 0.00069,
+        "attack_precision": 0.99696,
+        "binary_f1": 0.99667,
+        "alert_volume_pct": 18.53
+      },
+      {
+        "threshold": 0.2,
+        "attack_recall": 0.99638,
+        "attack_fnr": 0.00362,
+        "benign_fpr": 0.00046,
+        "attack_precision": 0.99797,
+        "binary_f1": 0.99717,
+        "alert_volume_pct": 18.51
+      },
+      {
+        "threshold": 0.25,
+        "attack_recall": 0.99629,
+        "attack_fnr": 0.00371,
+        "benign_fpr": 0.0004,
+        "attack_precision": 0.99823,
+        "binary_f1": 0.99726,
+        "alert_volume_pct": 18.51
+      },
+      {
+        "threshold": 0.3,
+        "attack_recall": 0.99621,
+        "attack_fnr": 0.00379,
+        "benign_fpr": 0.00033,
+        "attack_precision": 0.99856,
+        "binary_f1": 0.99738,
+        "alert_volume_pct": 18.5
+      },
+      {
+        "threshold": 0.35,
+        "attack_recall": 0.99621,
+        "attack_fnr": 0.00379,
+        "benign_fpr": 0.00023,
+        "attack_precision": 0.99899,
+        "binary_f1": 0.9976,
+        "alert_volume_pct": 18.49
+      },
+      {
+        "threshold": 0.4,
+        "attack_recall": 0.99621,
+        "attack_fnr": 0.00379,
+        "benign_fpr": 0.00021,
+        "attack_precision": 0.99907,
+        "binary_f1": 0.99764,
+        "alert_volume_pct": 18.49
+      },
+      {
+        "threshold": 0.45,
+        "attack_recall": 0.99612,
+        "attack_fnr": 0.00388,
+        "benign_fpr": 0.00021,
+        "attack_precision": 0.99907,
+        "binary_f1": 0.99759,
+        "alert_volume_pct": 18.49
+      },
+      {
+        "threshold": 0.5,
+        "attack_recall": 0.99604,
+        "attack_fnr": 0.00396,
+        "benign_fpr": 0.00019,
+        "attack_precision": 0.99915,
+        "binary_f1": 0.99759,
+        "alert_volume_pct": 18.48
+      }
+    ]
+  },
+  "nsl_kdd": {
+    "dataset": "NSL-KDD",
+    "validation_samples": 25193,
+    "selected_attack_threshold": 0.5,
+    "selected_normal_certainty_threshold": 0.75,
+    "grid_results": [
+      {
+        "threshold": 0.1,
+        "attack_recall": 1.0,
+        "attack_fnr": 0.0,
+        "benign_fpr": 0.00394,
+        "attack_precision": 0.9955,
+        "binary_f1": 0.99774
+      },
+      {
+        "threshold": 0.2,
+        "attack_recall": 1.0,
+        "attack_fnr": 0.0,
+        "benign_fpr": 0.00156,
+        "attack_precision": 0.99821,
+        "binary_f1": 0.99911
+      },
+      {
+        "threshold": 0.3,
+        "attack_recall": 1.0,
+        "attack_fnr": 0.0,
+        "benign_fpr": 0.00119,
+        "attack_precision": 0.99864,
+        "binary_f1": 0.99932
+      },
+      {
+        "threshold": 0.35,
+        "attack_recall": 1.0,
+        "attack_fnr": 0.0,
+        "benign_fpr": 0.00097,
+        "attack_precision": 0.99889,
+        "binary_f1": 0.99945
+      },
+      {
+        "threshold": 0.4,
+        "attack_recall": 0.99983,
+        "attack_fnr": 0.00017,
+        "benign_fpr": 0.00089,
+        "attack_precision": 0.99898,
+        "binary_f1": 0.9994
+      },
+      {
+        "threshold": 0.45,
+        "attack_recall": 0.99983,
+        "attack_fnr": 0.00017,
+        "benign_fpr": 0.00082,
+        "attack_precision": 0.99906,
+        "binary_f1": 0.99945
+      },
+      {
+        "threshold": 0.5,
+        "attack_recall": 0.99983,
+        "attack_fnr": 0.00017,
+        "benign_fpr": 0.00052,
+        "attack_precision": 0.9994,
+        "binary_f1": 0.99962
+      }
+    ],
+    "uncertainty_results": [
+      {
+        "normal_certainty_threshold": 0.6,
+        "suspicious_total": 5,
+        "suspicious_attacks_caught": 0,
+        "suspicious_benign_flagged": 5
+      },
+      {
+        "normal_certainty_threshold": 0.7,
+        "suspicious_total": 11,
+        "suspicious_attacks_caught": 2,
+        "suspicious_benign_flagged": 9
+      },
+      {
+        "normal_certainty_threshold": 0.75,
+        "suspicious_total": 14,
+        "suspicious_attacks_caught": 2,
+        "suspicious_benign_flagged": 12
+      },
+      {
+        "normal_certainty_threshold": 0.8,
+        "suspicious_total": 16,
+        "suspicious_attacks_caught": 2,
+        "suspicious_benign_flagged": 14
+      },
+      {
+        "normal_certainty_threshold": 0.85,
+        "suspicious_total": 26,
+        "suspicious_attacks_caught": 2,
+        "suspicious_benign_flagged": 24
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "cicids2017": {
+    "A_ground_truth": {
+      "accuracy": 0.99603,
+      "attack_precision": 0.96858,
+      "attack_recall": 0.978,
+      "attack_fnr": 0.022,
+      "attack_f1": 0.97327,
+      "tp": 2312,
+      "tn": 29561,
+      "fp": 75,
+      "fn": 52,
+      "total": 32000
+    },
+    "B_legacy_defaults": {
+      "accuracy": 0.99572,
+      "attack_precision": 0.96454,
+      "attack_recall": 0.978,
+      "attack_fnr": 0.022,
+      "attack_f1": 0.97122,
+      "tp": 2312,
+      "tn": 29551,
+      "fp": 85,
+      "fn": 52,
+      "total": 32000
+    },
+    "C_remediated_sensor": {
+      "accuracy": 0.99672,
+      "attack_precision": 0.97759,
+      "attack_recall": 0.978,
+      "attack_fnr": 0.022,
+      "attack_f1": 0.9778,
+      "tp": 2312,
+      "tn": 29583,
+      "fp": 53,
+      "fn": 52,
+      "total": 32000
+    }
+  },
+  "nsl_kdd": {
+    "A_ground_truth": {
+      "accuracy": 0.81241,
+      "attack_precision": 0.96914,
+      "attack_recall": 0.69251,
+      "attack_fnr": 0.30749,
+      "attack_f1": 0.8078,
+      "tp": 8887,
+      "tn": 9428,
+      "fp": 283,
+      "fn": 3946,
+      "total": 22544
+    },
+    "B_legacy_defaults": {
+      "accuracy": 0.80558,
+      "attack_precision": 0.9708,
+      "attack_recall": 0.67887,
+      "attack_fnr": 0.32113,
+      "attack_f1": 0.79901,
+      "tp": 8712,
+      "tn": 9449,
+      "fp": 262,
+      "fn": 4121,
+      "total": 22544
+    },
+    "C_remediated_sensor": {
+      "accuracy": 0.80948,
+      "attack_precision": 0.96881,
+      "attack_recall": 0.68745,
+      "attack_fnr": 0.31255,
+      "attack_f1": 0.80423,
+      "tp": 8822,
+      "tn": 9427,
+      "fp": 284,
+      "fn": 4011,
+      "total": 22544
+    }
+  }
+}

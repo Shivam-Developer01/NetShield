@@ -1,0 +1,95 @@
+"""
+NetShield Phase 2 Validation Test Suite
+Automated tests verifying leakage-free preprocessing, artifact serialization, shape integrity, and zero NaNs/Infs.
+"""
+
+import os
+import json
+import joblib
+import numpy as np
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+RAW_DATA_DIR = os.path.join(PROJECT_ROOT, "data", "raw")
+PROCESSED_DATA_DIR = os.path.join(PROJECT_ROOT, "data", "processed")
+ARTIFACTS_DIR = os.path.join(PROJECT_ROOT, "artifacts")
+
+
+def test_raw_datasets_exist_and_unchanged():
+    """1. Verify raw dataset files exist and remain untouched."""
+    nsl_train = os.path.join(RAW_DATA_DIR, "KDDTrain+.txt")
+    nsl_test = os.path.join(RAW_DATA_DIR, "KDDTest+.txt")
+    
+    assert os.path.exists(nsl_train), "Raw KDDTrain+.txt missing!"
+    assert os.path.exists(nsl_test), "Raw KDDTest+.txt missing!"
+    assert os.path.getsize(nsl_train) == 19109424, f"KDDTrain+.txt size altered: {os.path.getsize(nsl_train)}"
+    assert os.path.getsize(nsl_test) == 3441513, f"KDDTest+.txt size altered: {os.path.getsize(nsl_test)}"
+
+
+def test_nsl_kdd_processed_artifacts_and_shapes():
+    """2. Verify NSL-KDD processed files, shapes, and artifact loading."""
+    train_npz = os.path.join(PROCESSED_DATA_DIR, "nsl_kdd", "train_processed.npz")
+    test_npz = os.path.join(PROCESSED_DATA_DIR, "nsl_kdd", "test_processed.npz")
+    preprocessor_path = os.path.join(ARTIFACTS_DIR, "preprocessors", "nsl_kdd_preprocessor.joblib")
+    features_path = os.path.join(ARTIFACTS_DIR, "features", "nsl_kdd_features.json")
+    encoder_path = os.path.join(ARTIFACTS_DIR, "encoders", "nsl_kdd_label_encoder.joblib")
+
+    assert os.path.exists(train_npz), "NSL-KDD train_processed.npz missing!"
+    assert os.path.exists(test_npz), "NSL-KDD test_processed.npz missing!"
+    assert os.path.exists(preprocessor_path), "nsl_kdd_preprocessor.joblib missing!"
+    assert os.path.exists(features_path), "nsl_kdd_features.json missing!"
+    assert os.path.exists(encoder_path), "nsl_kdd_label_encoder.joblib missing!"
+
+    train_data = np.load(train_npz)
+    test_data = np.load(test_npz)
+
+    X_train, y_train = train_data['X'], train_data['y_5class']
+    X_test, y_test = test_data['X'], test_data['y_5class']
+
+    assert X_train.shape[0] == 125973, f"Unexpected NSL-KDD train row count: {X_train.shape[0]}"
+    assert X_test.shape[0] == 22544, f"Unexpected NSL-KDD test row count: {X_test.shape[0]}"
+    assert X_train.shape[1] == X_test.shape[1], "Train and Test feature counts do not match!"
+
+    # Verify zero NaNs or Infs
+    assert not np.isnan(X_train).any(), "NaN values found in NSL-KDD X_train!"
+    assert not np.isnan(X_test).any(), "NaN values found in NSL-KDD X_test!"
+    assert not np.isinf(X_train).any(), "Inf values found in NSL-KDD X_train!"
+    assert not np.isinf(X_test).any(), "Inf values found in NSL-KDD X_test!"
+
+    preprocessor = joblib.load(preprocessor_path)
+    encoder = joblib.load(encoder_path)
+    with open(features_path, "r") as f:
+        features = json.load(f)
+
+    assert len(features) == X_train.shape[1], "Feature names list length != X_train shape[1]"
+    assert hasattr(preprocessor, "transform"), "Loaded preprocessor is not a valid Sklearn transformer!"
+
+
+def test_cicids2017_processed_artifacts_and_shapes():
+    """3. Verify CICIDS2017 processed files, shapes, and zero NaNs/Infs."""
+    train_npz = os.path.join(PROCESSED_DATA_DIR, "cicids2017", "train_processed.npz")
+    test_npz = os.path.join(PROCESSED_DATA_DIR, "cicids2017", "test_processed.npz")
+    preprocessor_path = os.path.join(ARTIFACTS_DIR, "preprocessors", "cicids2017_preprocessor.joblib")
+    features_path = os.path.join(ARTIFACTS_DIR, "features", "cicids2017_features.json")
+    encoder_path = os.path.join(ARTIFACTS_DIR, "encoders", "cicids2017_label_encoder.joblib")
+
+    assert os.path.exists(train_npz), "CICIDS2017 train_processed.npz missing!"
+    assert os.path.exists(test_npz), "CICIDS2017 test_processed.npz missing!"
+    assert os.path.exists(preprocessor_path), "cicids2017_preprocessor.joblib missing!"
+    assert os.path.exists(features_path), "cicids2017_features.json missing!"
+    assert os.path.exists(encoder_path), "cicids2017_label_encoder.joblib missing!"
+
+    train_data = np.load(train_npz)
+    test_data = np.load(test_npz)
+
+    X_train, y_train = train_data['X'], train_data['y']
+    X_test, y_test = test_data['X'], test_data['y']
+
+    assert X_train.shape[0] + X_test.shape[0] == 2830743, "Total CICIDS2017 row count mismatch!"
+    assert X_train.shape[1] == 70, f"Expected 70 features, got {X_train.shape[1]}"
+    assert X_test.shape[1] == 70, f"Expected 70 features in test set, got {X_test.shape[1]}"
+
+    # Verify zero NaNs or Infs
+    assert not np.isnan(X_train).any(), "NaN values found in CICIDS2017 X_train!"
+    assert not np.isnan(X_test).any(), "NaN values found in CICIDS2017 X_test!"
+    assert not np.isinf(X_train).any(), "Inf values found in CICIDS2017 X_train!"
+    assert not np.isinf(X_test).any(), "Inf values found in CICIDS2017 X_test!"

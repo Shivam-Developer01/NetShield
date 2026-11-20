@@ -1,0 +1,814 @@
+[
+  {
+    "feature_name": "src_bytes",
+    "original_index": 1,
+    "mi_score": 0.712166370902608,
+    "rf_score": 0.12246635182783183,
+    "composite_score": 0.9999999521516311
+  },
+  {
+    "feature_name": "diff_srv_rate",
+    "original_index": 25,
+    "mi_score": 0.5123353750036752,
+    "rf_score": 0.07687429709743754,
+    "composite_score": 0.6735608484159679
+  },
+  {
+    "feature_name": "count",
+    "original_index": 18,
+    "mi_score": 0.4162925223288636,
+    "rf_score": 0.06602870535793762,
+    "composite_score": 0.5618509015142112
+  },
+  {
+    "feature_name": "flag_SF",
+    "original_index": 119,
+    "mi_score": 0.3753134191491716,
+    "rf_score": 0.06931946854324547,
+    "composite_score": 0.5465155403808049
+  },
+  {
+    "feature_name": "same_srv_rate",
+    "original_index": 24,
+    "mi_score": 0.4595973276269425,
+    "rf_score": 0.048066227320930646,
+    "composite_score": 0.5189180997953764
+  },
+  {
+    "feature_name": "dst_bytes",
+    "original_index": 2,
+    "mi_score": 0.4577541077230123,
+    "rf_score": 0.04828330167210237,
+    "composite_score": 0.5185102673253839
+  },
+  {
+    "feature_name": "dst_host_diff_srv_rate",
+    "original_index": 30,
+    "mi_score": 0.45236567659939775,
+    "rf_score": 0.04817221565648128,
+    "composite_score": 0.5142736039011697
+  },
+  {
+    "feature_name": "dst_host_serror_rate",
+    "original_index": 33,
+    "mi_score": 0.4021242542762893,
+    "rf_score": 0.050705580810779,
+    "composite_score": 0.48934305511199905
+  },
+  {
+    "feature_name": "serror_rate",
+    "original_index": 20,
+    "mi_score": 0.3842065065673559,
+    "rf_score": 0.05289866315589232,
+    "composite_score": 0.485717121967227
+  },
+  {
+    "feature_name": "dst_host_same_srv_rate",
+    "original_index": 29,
+    "mi_score": 0.4000554798740461,
+    "rf_score": 0.04502402500492113,
+    "composite_score": 0.4646942101446737
+  },
+  {
+    "feature_name": "dst_host_srv_count",
+    "original_index": 28,
+    "mi_score": 0.4154137036256249,
+    "rf_score": 0.03875200743039198,
+    "composite_score": 0.44986985653410116
+  },
+  {
+    "feature_name": "logged_in",
+    "original_index": 8,
+    "mi_score": 0.31108081292816125,
+    "rf_score": 0.028128066527391832,
+    "composite_score": 0.33324455959788624
+  },
+  {
+    "feature_name": "dst_host_same_src_port_rate",
+    "original_index": 31,
+    "mi_score": 0.23282178310104373,
+    "rf_score": 0.0334298100533805,
+    "composite_score": 0.2999459285310269
+  },
+  {
+    "feature_name": "dst_host_srv_diff_host_rate",
+    "original_index": 32,
+    "mi_score": 0.26038833122734095,
+    "rf_score": 0.02526968338190905,
+    "composite_score": 0.28598414895215185
+  },
+  {
+    "feature_name": "srv_count",
+    "original_index": 19,
+    "mi_score": 0.1660619447421503,
+    "rf_score": 0.02896626636180661,
+    "composite_score": 0.2348514226071346
+  },
+  {
+    "feature_name": "dst_host_count",
+    "original_index": 27,
+    "mi_score": 0.211380743237936,
+    "rf_score": 0.02085567083759634,
+    "composite_score": 0.23355542196575257
+  },
+  {
+    "feature_name": "service_http",
+    "original_index": 64,
+    "mi_score": 0.1945037877996172,
+    "rf_score": 0.022826517937229326,
+    "composite_score": 0.22975287972791128
+  },
+  {
+    "feature_name": "service_private",
+    "original_index": 89,
+    "mi_score": 0.1286955400530314,
+    "rf_score": 0.01700566601867128,
+    "composite_score": 0.1597849142414259
+  },
+  {
+    "feature_name": "dst_host_rerror_rate",
+    "original_index": 35,
+    "mi_score": 0.09832327423990206,
+    "rf_score": 0.016587663329292,
+    "composite_score": 0.13675445681587806
+  },
+  {
+    "feature_name": "srv_diff_host_rate",
+    "original_index": 26,
+    "mi_score": 0.1460111870676004,
+    "rf_score": 0.0061612543202580715,
+    "composite_score": 0.12766687514677874
+  },
+  {
+    "feature_name": "service_eco_i",
+    "original_index": 54,
+    "mi_score": 0.07219042948431564,
+    "rf_score": 0.018006128726952935,
+    "composite_score": 0.12419827238426137
+  },
+  {
+    "feature_name": "protocol_type_icmp",
+    "original_index": 37,
+    "mi_score": 0.048896586480641435,
+    "rf_score": 0.01826231162858552,
+    "composite_score": 0.10888998994340068
+  },
+  {
+    "feature_name": "rerror_rate",
+    "original_index": 22,
+    "mi_score": 0.07919885260720316,
+    "rf_score": 0.009766657216078509,
+    "composite_score": 0.0954790346656747
+  },
+  {
+    "feature_name": "dst_host_srv_rerror_rate",
+    "original_index": 36,
+    "mi_score": 0.08028655542302743,
+    "rf_score": 0.009546552647584442,
+    "composite_score": 0.09534405970438911
+  },
+  {
+    "feature_name": "service_ecr_i",
+    "original_index": 55,
+    "mi_score": 0.022766773149812236,
+    "rf_score": 0.01721729536821535,
+    "composite_score": 0.08627814480637334
+  },
+  {
+    "feature_name": "protocol_type_tcp",
+    "original_index": 38,
+    "mi_score": 0.04218427909980105,
+    "rf_score": 0.007861736451711343,
+    "composite_score": 0.06171440470949111
+  },
+  {
+    "feature_name": "protocol_type_udp",
+    "original_index": 39,
+    "mi_score": 0.03752927145706164,
+    "rf_score": 0.008092330787334233,
+    "composite_score": 0.05938766227742562
+  },
+  {
+    "feature_name": "duration",
+    "original_index": 0,
+    "mi_score": 0.05307030482444941,
+    "rf_score": 0.0053591158667934055,
+    "composite_score": 0.05913971607748766
+  },
+  {
+    "feature_name": "service_domain_u",
+    "original_index": 52,
+    "mi_score": 0.04735317957240537,
+    "rf_score": 0.005449269988097122,
+    "composite_score": 0.05549389597856111
+  },
+  {
+    "feature_name": "flag_RSTR",
+    "original_index": 114,
+    "mi_score": 0.038047472878963484,
+    "rf_score": 0.0042163916117317025,
+    "composite_score": 0.04392697748517049
+  },
+  {
+    "feature_name": "hot",
+    "original_index": 6,
+    "mi_score": 0.021401752487292702,
+    "rf_score": 0.006022604802451098,
+    "composite_score": 0.03961462176038515
+  },
+  {
+    "feature_name": "wrong_fragment",
+    "original_index": 4,
+    "mi_score": 0.010224444912081188,
+    "rf_score": 0.005666842875378183,
+    "composite_score": 0.030314734353351254
+  },
+  {
+    "feature_name": "num_compromised",
+    "original_index": 9,
+    "mi_score": 0.010629021538316907,
+    "rf_score": 0.00504170990458662,
+    "composite_score": 0.028046516785460076
+  },
+  {
+    "feature_name": "flag_REJ",
+    "original_index": 111,
+    "mi_score": 0.02386811833456126,
+    "rf_score": 0.0026917263729840553,
+    "composite_score": 0.027747059154920994
+  },
+  {
+    "feature_name": "service_smtp",
+    "original_index": 94,
+    "mi_score": 0.03123682669765815,
+    "rf_score": 0.00043203010396452907,
+    "composite_score": 0.023694721514996225
+  },
+  {
+    "feature_name": "service_other",
+    "original_index": 84,
+    "mi_score": 0.021688172654827254,
+    "rf_score": 0.0015170583849217372,
+    "composite_score": 0.02142067592189076
+  },
+  {
+    "feature_name": "service_ftp_data",
+    "original_index": 60,
+    "mi_score": 0.017010468291437597,
+    "rf_score": 0.0022252042448877196,
+    "composite_score": 0.02102772378983056
+  },
+  {
+    "feature_name": "service_urp_i",
+    "original_index": 105,
+    "mi_score": 0.007935348397023922,
+    "rf_score": 0.0009711181761966412,
+    "composite_score": 0.009536110611742924
+  },
+  {
+    "feature_name": "flag_RSTO",
+    "original_index": 112,
+    "mi_score": 0.00803247459992118,
+    "rf_score": 0.0008426163192096213,
+    "composite_score": 0.009079659839441846
+  },
+  {
+    "feature_name": "service_whois",
+    "original_index": 109,
+    "mi_score": 0.011862851563287702,
+    "rf_score": 1.1592270317355544e-05,
+    "composite_score": 0.008376036311845386
+  },
+  {
+    "feature_name": "flag_SH",
+    "original_index": 120,
+    "mi_score": 0.008173727992456081,
+    "rf_score": 0.0006110664929300771,
+    "composite_score": 0.008233470537708466
+  },
+  {
+    "feature_name": "is_guest_login",
+    "original_index": 17,
+    "mi_score": 0.0076158205208991525,
+    "rf_score": 0.0005143922816211213,
+    "composite_score": 0.007447076114898069
+  },
+  {
+    "feature_name": "service_gopher",
+    "original_index": 61,
+    "mi_score": 0.009693489789792897,
+    "rf_score": 1.1097830068397625e-05,
+    "composite_score": 0.006850945335456139
+  },
+  {
+    "feature_name": "service_ldap",
+    "original_index": 72,
+    "mi_score": 0.009366372235522391,
+    "rf_score": 5.138945548465235e-06,
+    "composite_score": 0.006596952961678984
+  },
+  {
+    "feature_name": "service_supdup",
+    "original_index": 98,
+    "mi_score": 0.009162572813137482,
+    "rf_score": 5.489822872731208e-06,
+    "composite_score": 0.006455301371546732
+  },
+  {
+    "feature_name": "service_iso_tsap",
+    "original_index": 69,
+    "mi_score": 0.009039034258121026,
+    "rf_score": 1.191738295486832e-05,
+    "composite_score": 0.00639480918160831
+  },
+  {
+    "feature_name": "service_netbios_dgm",
+    "original_index": 77,
+    "mi_score": 0.0090139591041134,
+    "rf_score": 1.4862637145327101e-05,
+    "composite_score": 0.006389229086699113
+  },
+  {
+    "feature_name": "service_login",
+    "original_index": 74,
+    "mi_score": 0.008425811033088815,
+    "rf_score": 1.8960367139829405e-06,
+    "composite_score": 0.005923360812817334
+  },
+  {
+    "feature_name": "root_shell",
+    "original_index": 10,
+    "mi_score": 0.007027207250402068,
+    "rf_score": 0.00013957488807115744,
+    "composite_score": 0.005503533543865066
+  },
+  {
+    "feature_name": "service_http_443",
+    "original_index": 66,
+    "mi_score": 0.007586171961273536,
+    "rf_score": 1.4554653896520183e-05,
+    "composite_score": 0.005385546404289721
+  },
+  {
+    "feature_name": "service_ftp",
+    "original_index": 59,
+    "mi_score": 0.002922282619022276,
+    "rf_score": 0.0008073234632816811,
+    "composite_score": 0.00534778823093496
+  },
+  {
+    "feature_name": "num_failed_logins",
+    "original_index": 7,
+    "mi_score": 0.0060641977654947166,
+    "rf_score": 0.0002643180530625732,
+    "composite_score": 0.00533671645958647
+  },
+  {
+    "feature_name": "service_uucp_path",
+    "original_index": 107,
+    "mi_score": 0.007188822458044752,
+    "rf_score": 2.0420415290291042e-05,
+    "composite_score": 0.005130522481777523
+  },
+  {
+    "feature_name": "service_exec",
+    "original_index": 57,
+    "mi_score": 0.006721732671870484,
+    "rf_score": 0.0,
+    "composite_score": 0.004719215096443671
+  },
+  {
+    "feature_name": "service_finger",
+    "original_index": 58,
+    "mi_score": 0.005553796399469402,
+    "rf_score": 0.00019762668762377187,
+    "composite_score": 0.004706087848824099
+  },
+  {
+    "feature_name": "service_csnet_ns",
+    "original_index": 47,
+    "mi_score": 0.006375741737292939,
+    "rf_score": 2.5415712348509183e-06,
+    "composite_score": 0.004486677308542443
+  },
+  {
+    "feature_name": "service_aol",
+    "original_index": 43,
+    "mi_score": 0.005935684211007208,
+    "rf_score": 0.0,
+    "composite_score": 0.0041673437346791435
+  },
+  {
+    "feature_name": "service_nntp",
+    "original_index": 82,
+    "mi_score": 0.005540355510468498,
+    "rf_score": 6.754134219381926e-06,
+    "composite_score": 0.003917365591139297
+  },
+  {
+    "feature_name": "service_telnet",
+    "original_index": 100,
+    "mi_score": 0.0012973550290471536,
+    "rf_score": 0.0007187489309774437,
+    "composite_score": 0.0038453259812492695
+  },
+  {
+    "feature_name": "service_mtp",
+    "original_index": 75,
+    "mi_score": 0.005460921915894312,
+    "rf_score": 0.0,
+    "composite_score": 0.003834021137710176
+  },
+  {
+    "feature_name": "service_Z39_50",
+    "original_index": 42,
+    "mi_score": 0.005332311085584074,
+    "rf_score": 1.1734746962596907e-06,
+    "composite_score": 0.003748516651972232
+  },
+  {
+    "feature_name": "service_klogin",
+    "original_index": 70,
+    "mi_score": 0.004824474407101542,
+    "rf_score": 4.621331297955027e-05,
+    "composite_score": 0.0035758596578727
+  },
+  {
+    "feature_name": "flag_S1",
+    "original_index": 116,
+    "mi_score": 0.002814535873772561,
+    "rf_score": 0.0003474555382463892,
+    "composite_score": 0.003394613556105499
+  },
+  {
+    "feature_name": "service_nnsp",
+    "original_index": 81,
+    "mi_score": 0.00461873250740652,
+    "rf_score": 2.297724654746077e-06,
+    "composite_score": 0.0032521152078450947
+  },
+  {
+    "feature_name": "num_file_creations",
+    "original_index": 13,
+    "mi_score": 0.0039580697376668805,
+    "rf_score": 0.00010545849861899342,
+    "composite_score": 0.003209455062686556
+  },
+  {
+    "feature_name": "service_link",
+    "original_index": 73,
+    "mi_score": 0.0044720437474405905,
+    "rf_score": 6.56353278015478e-06,
+    "composite_score": 0.003166543748670444
+  },
+  {
+    "feature_name": "service_bgp",
+    "original_index": 45,
+    "mi_score": 0.004066420480898891,
+    "rf_score": 3.9250281086233525e-05,
+    "composite_score": 0.0030152144418679953
+  },
+  {
+    "feature_name": "service_uucp",
+    "original_index": 106,
+    "mi_score": 0.004118033136851995,
+    "rf_score": 2.0249211933295653e-06,
+    "composite_score": 0.0028994688384724643
+  },
+  {
+    "feature_name": "service_netstat",
+    "original_index": 80,
+    "mi_score": 0.0038506891924705577,
+    "rf_score": 5.707762454490859e-06,
+    "composite_score": 0.0027268072999143953
+  },
+  {
+    "feature_name": "service_time",
+    "original_index": 103,
+    "mi_score": 0.0034126361382615933,
+    "rf_score": 3.263239445409541e-05,
+    "composite_score": 0.0025291842843103273
+  },
+  {
+    "feature_name": "service_netbios_ns",
+    "original_index": 78,
+    "mi_score": 0.0034513919566163676,
+    "rf_score": 1.0952121608110783e-10,
+    "composite_score": 0.0024231645062561097
+  },
+  {
+    "feature_name": "service_ssh",
+    "original_index": 96,
+    "mi_score": 0.003207868234389011,
+    "rf_score": 1.683636460700962e-05,
+    "composite_score": 0.0023209288935980466
+  },
+  {
+    "feature_name": "land",
+    "original_index": 3,
+    "mi_score": 0.00307606407463612,
+    "rf_score": 2.895690179836893e-05,
+    "composite_score": 0.0022778765857698873
+  },
+  {
+    "feature_name": "service_X11",
+    "original_index": 41,
+    "mi_score": 0.0028907726517073407,
+    "rf_score": 4.7087121223839924e-05,
+    "composite_score": 0.002221807825705822
+  },
+  {
+    "feature_name": "service_kshell",
+    "original_index": 71,
+    "mi_score": 0.0030527232329504717,
+    "rf_score": 2.7157406388445917e-11,
+    "composite_score": 0.002143265585639666
+  },
+  {
+    "feature_name": "num_access_files",
+    "original_index": 15,
+    "mi_score": 0.0029304817714697062,
+    "rf_score": 1.9502818413969753e-05,
+    "composite_score": 0.002137067012510318
+  },
+  {
+    "feature_name": "service_hostnames",
+    "original_index": 63,
+    "mi_score": 0.0028635930298601675,
+    "rf_score": 5.654706056107535e-11,
+    "composite_score": 0.002010480581141221
+  },
+  {
+    "feature_name": "service_domain",
+    "original_index": 51,
+    "mi_score": 0.0022833896641378804,
+    "rf_score": 6.546979618920989e-05,
+    "composite_score": 0.001870426413656452
+  },
+  {
+    "feature_name": "urgent",
+    "original_index": 5,
+    "mi_score": 0.0024247983489755764,
+    "rf_score": 2.8571123420165633e-05,
+    "composite_score": 0.00181905887014208
+  },
+  {
+    "feature_name": "is_host_login",
+    "original_index": 16,
+    "mi_score": 0.0024053757480808624,
+    "rf_score": 0.0,
+    "composite_score": 0.0016887737280102022
+  },
+  {
+    "feature_name": "service_sql_net",
+    "original_index": 95,
+    "mi_score": 0.002267452596582009,
+    "rf_score": 4.53286765133842e-06,
+    "composite_score": 0.0016104467929278236
+  },
+  {
+    "feature_name": "service_tftp_u",
+    "original_index": 101,
+    "mi_score": 0.0022310456037055726,
+    "rf_score": 0.0,
+    "composite_score": 0.001566379475030764
+  },
+  {
+    "feature_name": "service_pop_2",
+    "original_index": 86,
+    "mi_score": 0.0021869548604516176,
+    "rf_score": 3.3799363816872596e-10,
+    "composite_score": 0.001535425488058303
+  },
+  {
+    "feature_name": "service_ctf",
+    "original_index": 48,
+    "mi_score": 0.001978180956564879,
+    "rf_score": 3.394895409422722e-08,
+    "composite_score": 0.001388986077953816
+  },
+  {
+    "feature_name": "service_printer",
+    "original_index": 88,
+    "mi_score": 0.0019397116068020637,
+    "rf_score": 0.0,
+    "composite_score": 0.0013618387913394974
+  },
+  {
+    "feature_name": "service_efs",
+    "original_index": 56,
+    "mi_score": 0.0017098237608117461,
+    "rf_score": 2.4297071021804896e-09,
+    "composite_score": 0.001200448333349639
+  },
+  {
+    "feature_name": "service_harvest",
+    "original_index": 62,
+    "mi_score": 0.0014081941985264468,
+    "rf_score": 0.0,
+    "composite_score": 0.000988669387019986
+  },
+  {
+    "feature_name": "service_imap4",
+    "original_index": 68,
+    "mi_score": 0.0,
+    "rf_score": 0.00022803723448617367,
+    "composite_score": 0.0009310198779594582
+  },
+  {
+    "feature_name": "service_netbios_ssn",
+    "original_index": 79,
+    "mi_score": 0.0012319721729476818,
+    "rf_score": 3.649198087290657e-07,
+    "composite_score": 0.0008664367538918582
+  },
+  {
+    "feature_name": "service_http_8001",
+    "original_index": 67,
+    "mi_score": 0.0010491507447840664,
+    "rf_score": 6.05877476931538e-06,
+    "composite_score": 0.0007613275216190849
+  },
+  {
+    "feature_name": "service_discard",
+    "original_index": 50,
+    "mi_score": 0.000790748970731725,
+    "rf_score": 1.2691762967884295e-05,
+    "composite_score": 0.0006069888534921452
+  },
+  {
+    "feature_name": "flag_RSTOS0",
+    "original_index": 113,
+    "mi_score": 0.0,
+    "rf_score": 0.00014618028697617065,
+    "composite_score": 0.0005968181172135938
+  },
+  {
+    "feature_name": "service_red_i",
+    "original_index": 90,
+    "mi_score": 0.0008328862683879557,
+    "rf_score": 0.0,
+    "composite_score": 0.000584755396156405
+  },
+  {
+    "feature_name": "service_IRC",
+    "original_index": 40,
+    "mi_score": 8.216726148746467e-05,
+    "rf_score": 8.686071001720258e-05,
+    "composite_score": 0.00041231913889061556
+  },
+  {
+    "feature_name": "flag_S2",
+    "original_index": 117,
+    "mi_score": 0.0,
+    "rf_score": 8.755499604869515e-05,
+    "composite_score": 0.00035746548987787975
+  },
+  {
+    "feature_name": "service_echo",
+    "original_index": 53,
+    "mi_score": 0.0003494650761890483,
+    "rf_score": 1.48377760262591e-05,
+    "composite_score": 0.00030593251959565586
+  },
+  {
+    "feature_name": "service_tim_i",
+    "original_index": 102,
+    "mi_score": 0.0,
+    "rf_score": 4.366973361347759e-05,
+    "composite_score": 0.00017829276938458524
+  },
+  {
+    "feature_name": "flag_S3",
+    "original_index": 118,
+    "mi_score": 0.0,
+    "rf_score": 3.924233213676541e-05,
+    "composite_score": 0.00016021677933053107
+  },
+  {
+    "feature_name": "service_auth",
+    "original_index": 44,
+    "mi_score": 0.0,
+    "rf_score": 3.644234947470628e-05,
+    "composite_score": 0.0001487851395713805
+  },
+  {
+    "feature_name": "service_pop_3",
+    "original_index": 87,
+    "mi_score": 0.0,
+    "rf_score": 2.3002470074263946e-05,
+    "composite_score": 9.391342133034764e-05
+  },
+  {
+    "feature_name": "service_vmnet",
+    "original_index": 108,
+    "mi_score": 0.0,
+    "rf_score": 2.025255500334654e-05,
+    "composite_score": 8.268619521750144e-05
+  },
+  {
+    "feature_name": "service_pm_dump",
+    "original_index": 85,
+    "mi_score": 0.0,
+    "rf_score": 1.809002985561529e-05,
+    "composite_score": 7.385713752584153e-05
+  },
+  {
+    "feature_name": "service_ntp_u",
+    "original_index": 83,
+    "mi_score": 0.0,
+    "rf_score": 1.5197206691772303e-05,
+    "composite_score": 6.204645285836593e-05
+  },
+  {
+    "feature_name": "flag_OTH",
+    "original_index": 110,
+    "mi_score": 0.0,
+    "rf_score": 1.4530907638959794e-05,
+    "composite_score": 5.932611789100069e-05
+  },
+  {
+    "feature_name": "service_shell",
+    "original_index": 93,
+    "mi_score": 0.0,
+    "rf_score": 1.1568590566048363e-05,
+    "composite_score": 4.723170670453964e-05
+  },
+  {
+    "feature_name": "num_shells",
+    "original_index": 14,
+    "mi_score": 0.0,
+    "rf_score": 9.362559500247703e-06,
+    "composite_score": 3.822502506202466e-05
+  },
+  {
+    "feature_name": "service_sunrpc",
+    "original_index": 97,
+    "mi_score": 0.0,
+    "rf_score": 6.748232745080929e-06,
+    "composite_score": 2.755137265597825e-05
+  },
+  {
+    "feature_name": "service_name",
+    "original_index": 76,
+    "mi_score": 0.0,
+    "rf_score": 3.8953161344060185e-06,
+    "composite_score": 1.5903616618750428e-05
+  },
+  {
+    "feature_name": "service_systat",
+    "original_index": 99,
+    "mi_score": 0.0,
+    "rf_score": 3.6007820285863144e-06,
+    "composite_score": 1.470110638890555e-05
+  },
+  {
+    "feature_name": "su_attempted",
+    "original_index": 11,
+    "mi_score": 0.0,
+    "rf_score": 1.2701307104120414e-06,
+    "composite_score": 5.185630941652544e-06
+  },
+  {
+    "feature_name": "service_daytime",
+    "original_index": 49,
+    "mi_score": 0.0,
+    "rf_score": 5.934378527294769e-07,
+    "composite_score": 2.422860628307698e-06
+  },
+  {
+    "feature_name": "service_remote_job",
+    "original_index": 91,
+    "mi_score": 0.0,
+    "rf_score": 5.254804701957838e-07,
+    "composite_score": 2.145407368819062e-06
+  },
+  {
+    "feature_name": "service_courier",
+    "original_index": 46,
+    "mi_score": 0.0,
+    "rf_score": 1.788274352977209e-07,
+    "composite_score": 7.301083849829872e-07
+  },
+  {
+    "feature_name": "service_urh_i",
+    "original_index": 104,
+    "mi_score": 0.0,
+    "rf_score": 1.0631638050862e-08,
+    "composite_score": 4.340636029430019e-08
+  },
+  {
+    "feature_name": "service_http_2784",
+    "original_index": 65,
+    "mi_score": 0.0,
+    "rf_score": 0.0,
+    "composite_score": 0.0
+  },
+  {
+    "feature_name": "service_rje",
+    "original_index": 92,
+    "mi_score": 0.0,
+    "rf_score": 0.0,
+    "composite_score": 0.0
+  }
+]

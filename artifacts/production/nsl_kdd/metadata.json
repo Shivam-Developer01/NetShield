@@ -1,0 +1,66 @@
+{
+  "model_version": "NetShield-NSLKDD-XGBoost-v1.0",
+  "dataset": "NSL-KDD",
+  "algorithm": "XGBoost Classifier (Histogram Gradient Boosting)",
+  "training_samples": 125973,
+  "test_samples": 22544,
+  "feature_count": 37,
+  "selected_features_file": "feature_schema.json",
+  "hyperparameters": {
+    "subsample": "0.8",
+    "n_estimators": "100",
+    "max_depth": "8",
+    "learning_rate": "0.1"
+  },
+  "evaluation_metrics": {
+    "accuracy": 0.7727555003548616,
+    "precision_macro": 0.6605912870053432,
+    "recall_macro": 0.42789917424735435,
+    "f1_macro": 0.438676756483823,
+    "f1_weighted": 0.7314474864212054,
+    "fpr_macro": 0.06403365385517128,
+    "inference_latency_seconds": 0.1770942211151123
+  },
+  "per_class_metrics": {
+    "DoS": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "fpr": 0.0,
+      "support": 2
+    },
+    "Normal": {
+      "precision": 0.9649176327028676,
+      "recall": 0.8482166800750871,
+      "f1_score": 0.9028114742400457,
+      "fpr": 0.015245923372663396,
+      "support": 7458
+    },
+    "Probe": {
+      "precision": 0.6790985672114623,
+      "recall": 0.9712696941612604,
+      "f1_score": 0.7993220338983051,
+      "fpr": 0.34730772227850076,
+      "support": 9711
+    },
+    "R2L": {
+      "precision": 0.7753396029258098,
+      "recall": 0.6129698471705907,
+      "f1_score": 0.6846597462514418,
+      "fpr": 0.021368583213238583,
+      "support": 2421
+    },
+    "U2R": {
+      "precision": 0.9886363636363636,
+      "recall": 0.06031195840554593,
+      "f1_score": 0.11368833714472394,
+      "fpr": 0.00010173457449514217,
+      "support": 2885
+    }
+  },
+  "random_seed": 42,
+  "known_limitations": [
+    "Evaluated on canonical KDDTest+ split which contains 17 unseen attack variations.",
+    "Higher FPR on rare R2L/U2R attack categories due to extreme training class imbalance."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Condition_A_Ground_Truth": {
+    "accuracy": 0.8123225691980128,
+    "attack_recall": 0.7393438790617938,
+    "r2l_recall": 0.3418773813647385,
+    "u2r_recall": 0.47761194029850745,
+    "benign_fpr": 0.030171969931006074
+  },
+  "Condition_B_Legacy_Zero_Defaults": {
+    "accuracy": 0.8087739531582683,
+    "attack_recall": 0.7345905088443856,
+    "r2l_recall": 0.31832351922410806,
+    "u2r_recall": 0.373134328358209,
+    "recovered_over_v1_2": 714
+  },
+  "Condition_C_Remediated_Dynamic_Sensor": {
+    "accuracy": 0.8117902767920511,
+    "attack_recall": 0.7380191693290735,
+    "r2l_recall": 0.3418773813647385,
+    "u2r_recall": 0.26865671641791045,
+    "recovered_over_b": 44
+  }
+}

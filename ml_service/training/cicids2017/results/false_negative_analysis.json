@@ -1,0 +1,114 @@
+{
+  "cicids2017": {
+    "dataset": "CICIDS2017",
+    "total_attacks": 7445,
+    "total_fn": 31,
+    "overall_fnr": 0.0042,
+    "breakdown": {
+      "Bot": {
+        "support": 20,
+        "false_negatives": 20,
+        "recall": 0.0,
+        "pct_of_total_fn": 64.52,
+        "p_benign_mean_when_missed": 0.9981,
+        "p_attack_mean_when_missed": 0.0019,
+        "p_attack_median_when_missed": 0.0019
+      },
+      "DDoS": {
+        "support": 3536,
+        "false_negatives": 9,
+        "recall": 0.9975,
+        "pct_of_total_fn": 29.03,
+        "p_benign_mean_when_missed": 0.8217,
+        "p_attack_mean_when_missed": 0.1783,
+        "p_attack_median_when_missed": 0.1213
+      },
+      "DoS GoldenEye": {
+        "support": 178,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "pct_of_total_fn": 0.0,
+        "p_benign_mean_when_missed": 0.0,
+        "p_attack_mean_when_missed": 0.0,
+        "p_attack_median_when_missed": 0.0
+      },
+      "Infiltration": {
+        "support": 1,
+        "false_negatives": 1,
+        "recall": 0.0,
+        "pct_of_total_fn": 3.23,
+        "p_benign_mean_when_missed": 0.9702,
+        "p_attack_mean_when_missed": 0.0298,
+        "p_attack_median_when_missed": 0.0298
+      },
+      "PortScan": {
+        "support": 3619,
+        "false_negatives": 1,
+        "recall": 0.9997,
+        "pct_of_total_fn": 3.23,
+        "p_benign_mean_when_missed": 0.9678,
+        "p_attack_mean_when_missed": 0.0322,
+        "p_attack_median_when_missed": 0.0322
+      },
+      "SSH-Patator": {
+        "support": 91,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "pct_of_total_fn": 0.0,
+        "p_benign_mean_when_missed": 0.0,
+        "p_attack_mean_when_missed": 0.0,
+        "p_attack_median_when_missed": 0.0
+      }
+    },
+    "p_attack_distribution_in_fn": {
+      ">= 0.40": 2,
+      "0.30 - 0.40": 0,
+      "0.20 - 0.30": 1,
+      "0.10 - 0.20": 3,
+      "< 0.10": 25
+    }
+  },
+  "nsl_kdd": {
+    "dataset": "NSL-KDD",
+    "total_attacks": 11725,
+    "total_fn": 2,
+    "overall_fnr": 0.0002,
+    "breakdown": {
+      "DoS": {
+        "support": 9185,
+        "false_negatives": 2,
+        "recall": 0.9998,
+        "pct_of_total_fn": 100.0,
+        "p_attack_mean_when_missed": 0.3687
+      },
+      "Probe": {
+        "support": 2331,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "pct_of_total_fn": 0.0,
+        "p_attack_mean_when_missed": 0.0
+      },
+      "R2L": {
+        "support": 199,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "pct_of_total_fn": 0.0,
+        "p_attack_mean_when_missed": 0.0
+      },
+      "U2R": {
+        "support": 10,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "pct_of_total_fn": 0.0,
+        "p_attack_mean_when_missed": 0.0
+      }
+    },
+    "p_attack_distribution_in_fn": {
+      ">= 0.40": 0,
+      "0.30 - 0.40": 2,
+      "0.20 - 0.30": 0,
+      "0.10 - 0.20": 0,
+      "< 0.10": 0
+    }
+  }
+}

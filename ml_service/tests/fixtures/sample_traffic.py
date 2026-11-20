@@ -1,0 +1,91 @@
+"""
+NetShield ML Validation Test Fixtures (`ml_service/tests/fixtures/sample_traffic.py`)
+Provides lightweight, self-contained test fixtures for both NSL-KDD and CICIDS2017 schemas.
+Allows tests to run cleanly on fresh clones without requiring the 1.32 GB local dataset collection.
+"""
+
+import numpy as np
+import pandas as pd
+
+NSL_KDD_SAMPLE = {
+    "duration": 0, "protocol_type": "tcp", "service": "http", "flag": "SF",
+    "src_bytes": 215, "dst_bytes": 4507, "land": 0, "wrong_fragment": 0,
+    "urgent": 0, "hot": 0, "num_failed_logins": 0, "logged_in": 1,
+    "num_compromised": 0, "root_shell": 0, "su_attempted": 0, "num_root": 0,
+    "num_file_creations": 0, "num_shells": 0, "num_access_files": 0,
+    "num_outbound_cmds": 0, "is_host_login": 0, "is_guest_login": 0,
+    "count": 1, "srv_count": 1, "serror_rate": 0.0, "srv_serror_rate": 0.0,
+    "rerror_rate": 0.0, "srv_rerror_rate": 0.0, "same_srv_rate": 1.0,
+    "diff_srv_rate": 0.0, "srv_diff_host_rate": 0.0, "dst_host_count": 255,
+    "dst_host_srv_count": 255, "dst_host_same_srv_rate": 1.0,
+    "dst_host_diff_srv_rate": 0.0, "dst_host_same_src_port_rate": 0.0,
+    "dst_host_srv_diff_host_rate": 0.0, "dst_host_serror_rate": 0.0,
+    "dst_host_srv_serror_rate": 0.0, "dst_host_rerror_rate": 0.0,
+    "dst_host_srv_rerror_rate": 0.0
+}
+
+CICIDS2017_SAMPLE = {
+    "Destination Port": 80, "Flow Duration": 3, "Total Fwd Packets": 2,
+    "Total Backward Packets": 0, "Total Length of Fwd Packets": 12,
+    "Total Length of Bwd Packets": 0, "Fwd Packet Length Max": 6,
+    "Fwd Packet Length Min": 6, "Fwd Packet Length Mean": 6.0,
+    "Fwd Packet Length Std": 0.0, "Bwd Packet Length Max": 0,
+    "Bwd Packet Length Min": 0, "Bwd Packet Length Mean": 0.0,
+    "Bwd Packet Length Std": 0.0, "Flow Bytes/s": 4000000.0,
+    "Flow Packets/s": 666666.6666666666, "Flow IAT Mean": 3.0,
+    "Flow IAT Std": 0.0, "Flow IAT Max": 3, "Flow IAT Min": 3,
+    "Fwd IAT Total": 3, "Fwd IAT Mean": 3.0, "Fwd IAT Std": 0.0,
+    "Fwd IAT Max": 3, "Fwd IAT Min": 3, "Bwd IAT Total": 0,
+    "Bwd IAT Mean": 0.0, "Bwd IAT Std": 0.0, "Bwd IAT Max": 0,
+    "Bwd IAT Min": 0, "Fwd PSH Flags": 0, "Bwd PSH Flags": 0,
+    "Fwd URG Flags": 0, "Bwd URG Flags": 0, "Fwd Header Length": 40,
+    "Bwd Header Length": 0, "Fwd Packets/s": 666666.6666666666,
+    "Bwd Packets/s": 0.0, "Min Packet Length": 6, "Max Packet Length": 6,
+    "Packet Length Mean": 6.0, "Packet Length Std": 0.0,
+    "Packet Length Variance": 0.0, "FIN Flag Count": 0,
+    "SYN Flag Count": 0, "RST Flag Count": 0, "PSH Flag Count": 0,
+    "ACK Flag Count": 1, "URG Flag Count": 0, "CWE Flag Count": 0,
+    "ECE Flag Count": 0, "Down/Up Ratio": 0, "Average Packet Size": 9.0,
+    "Avg Fwd Segment Size": 6.0, "Avg Bwd Segment Size": 0.0,
+    "Fwd Header Length.1": 40, "Fwd Avg Bytes/Bulk": 0,
+    "Fwd Avg Packets/Bulk": 0, "Fwd Avg Bulk Rate": 0,
+    "Bwd Avg Bytes/Bulk": 0, "Bwd Avg Packets/Bulk": 0,
+    "Bwd Avg Bulk Rate": 0, "Subflow Fwd Packets": 2,
+    "Subflow Fwd Bytes": 12, "Subflow Bwd Packets": 0,
+    "Subflow Bwd Bytes": 0, "Init_Win_bytes_forward": 8192,
+    "Init_Win_bytes_backward": -1, "act_data_pkt_fwd": 1,
+    "min_seg_size_forward": 20, "Active Mean": 0.0,
+    "Active Std": 0.0, "Active Max": 0, "Active Min": 0,
+    "Idle Mean": 0.0, "Idle Std": 0.0, "Idle Max": 0, "Idle Min": 0
+}
+
+def get_nsl_kdd_synthetic_df(n=5):
+    """Generates a small valid DataFrame for NSL-KDD preprocessing tests."""
+    records = []
+    for i in range(n):
+        rec = dict(NSL_KDD_SAMPLE)
+        rec["duration"] = i * 10
+        rec["src_bytes"] = 200 + i * 50
+        rec["count"] = i + 1
+        records.append(rec)
+    return pd.DataFrame(records)
+
+def get_cicids2017_synthetic_df(n=5):
+    """Generates a small valid DataFrame for CICIDS2017 preprocessing tests."""
+    records = []
+    for i in range(n):
+        rec = dict(CICIDS2017_SAMPLE)
+        rec["Flow Duration"] = (i + 1) * 100
+        rec["Total Fwd Packets"] = i + 2
+        records.append(rec)
+    return pd.DataFrame(records)
+
+def get_nsl_kdd_reduced_array(n=5):
+    """Returns a synthetic reduced feature matrix (n, 37) with valid float values."""
+    np.random.seed(42)
+    return np.random.uniform(0.0, 1.0, size=(n, 37))
+
+def get_cicids2017_reduced_array(n=5):
+    """Returns a synthetic reduced feature matrix (n, 43) with valid float values."""
+    np.random.seed(42)
+    return np.random.uniform(0.0, 1.0, size=(n, 43))

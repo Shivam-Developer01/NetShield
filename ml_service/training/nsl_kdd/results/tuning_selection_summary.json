@@ -1,0 +1,25 @@
+{
+  "best_s1_config": {
+    "max_depth": 7,
+    "learning_rate": 0.08,
+    "n_estimators": 120,
+    "colsample_bytree": 0.85
+  },
+  "best_s2_config": {
+    "r2l": 2.5,
+    "u2r": 5.0
+  },
+  "optimal_thresholds": {
+    "tau_attack": 0.3,
+    "tau_certainty": 0.65
+  },
+  "validation_metrics": {
+    "accuracy": 0.9989680492161143,
+    "attack_recall": 0.999232474842231,
+    "attack_fnr": 0.0007675251577690602,
+    "benign_fpr": 0.0011879129853738213,
+    "macro_f1": 0.9766740805827341,
+    "r2l_recall": 0.9899497487437185,
+    "u2r_recall": 0.9
+  }
+}

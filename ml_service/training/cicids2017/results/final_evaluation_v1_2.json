@@ -1,0 +1,195 @@
+{
+  "cicids2017_v1_2": {
+    "model_version": "NetShield-CICIDS2017-TwoStage-v1.2",
+    "dataset": "CICIDS2017",
+    "decision_architecture": "Two-Stage Cascade (Stage 1: Cost-Sensitive Attack Detector, Stage 2: Multiclass Attack Router)",
+    "attack_threshold": 0.4,
+    "test_samples": 424614,
+    "evaluation_metrics": {
+      "accuracy": 0.9924731638617662,
+      "weighted_f1": 0.9930365514700211,
+      "macro_f1": 0.7624947086573901,
+      "macro_recall": 0.8448477631281023,
+      "binary_attack_recall": 0.9940345256312165,
+      "binary_attack_fnr": 0.0059654743687834735,
+      "benign_fpr": 0.0027246118381304882,
+      "tp": 83149,
+      "tn": 340037,
+      "fp": 929,
+      "fn": 499
+    },
+    "per_class_metrics": {
+      "BENIGN": {
+        "precision": 0.9985346630018559,
+        "recall": 0.9972753881618696,
+        "f1-score": 0.9979046283062999,
+        "support": 340966.0
+      },
+      "Bot": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 295.0
+      },
+      "DDoS": {
+        "precision": 0.9986980522862202,
+        "recall": 0.9985940429077276,
+        "f1-score": 0.9986460448888195,
+        "support": 19204.0
+      },
+      "DoS GoldenEye": {
+        "precision": 0.9071680376028202,
+        "recall": 1.0,
+        "f1-score": 0.9513247073321011,
+        "support": 1544.0
+      },
+      "DoS Hulk": {
+        "precision": 0.9955279428537127,
+        "recall": 0.9569545021782406,
+        "f1-score": 0.9758601921181541,
+        "support": 34661.0
+      },
+      "DoS Slowhttptest": {
+        "precision": 0.8253588516746412,
+        "recall": 0.8363636363636363,
+        "f1-score": 0.8308248043347382,
+        "support": 825.0
+      },
+      "DoS slowloris": {
+        "precision": 0.7847579814624099,
+        "recall": 0.8768699654775605,
+        "f1-score": 0.8282608695652174,
+        "support": 869.0
+      },
+      "FTP-Patator": {
+        "precision": 0.9957805907172996,
+        "recall": 0.9907640638119227,
+        "f1-score": 0.9932659932659933,
+        "support": 1191.0
+      },
+      "Heartbleed": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1-score": 0.8,
+        "support": 2.0
+      },
+      "Infiltration": {
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1-score": 0.9090909090909091,
+        "support": 5.0
+      },
+      "PortScan": {
+        "precision": 0.9596656976744186,
+        "recall": 0.9970218120805369,
+        "f1-score": 0.9779871626069783,
+        "support": 23840.0
+      },
+      "SSH-Patator": {
+        "precision": 0.9768211920529801,
+        "recall": 1.0,
+        "f1-score": 0.9882747068676717,
+        "support": 885.0
+      },
+      "Web Attack \ufffd Brute Force": {
+        "precision": 0.4540540540540541,
+        "recall": 0.7433628318584071,
+        "f1-score": 0.5637583892617449,
+        "support": 226.0
+      },
+      "Web Attack \ufffd Sql Injection": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1-score": 0.4,
+        "support": 3.0
+      },
+      "Web Attack \ufffd XSS": {
+        "precision": 0.18620689655172415,
+        "recall": 0.2755102040816326,
+        "f1-score": 0.2222222222222222,
+        "support": 98.0
+      },
+      "accuracy": 0.9924731638617662,
+      "macro avg": {
+        "precision": 0.7221715973288093,
+        "recall": 0.8448477631281023,
+        "f1-score": 0.7624947086573901,
+        "support": 424614.0
+      },
+      "weighted avg": {
+        "precision": 0.9937753128257115,
+        "recall": 0.9924731638617662,
+        "f1-score": 0.9930365514700211,
+        "support": 424614.0
+      }
+    }
+  },
+  "nsl_kdd_v1_2": {
+    "model_version": "NetShield-NSLKDD-CostSensitive-v1.2",
+    "dataset": "NSL-KDD",
+    "decision_architecture": "Two-Stage Cost-Sensitive Detection with Uncertainty Routing",
+    "attack_threshold": 0.45,
+    "certainty_threshold": 0.75,
+    "test_samples": 22544,
+    "evaluation_metrics": {
+      "accuracy": 0.7932931156848829,
+      "weighted_f1": 0.7650164621124288,
+      "macro_f1": 0.5990190696317719,
+      "attack_recall": 0.6926194373002884,
+      "attack_fnr": 0.30738056269971165,
+      "r2l_recall": 0.1532062391681109,
+      "u2r_recall": 0.208955223880597,
+      "unseen_variants_recall": 0.41706666666666664,
+      "unseen_variants_miss_rate": 0.5829333333333333,
+      "tp": 8887,
+      "tn": 9430,
+      "fp": 283,
+      "fn": 3944
+    },
+    "per_class_metrics": {
+      "DoS": {
+        "precision": 0.964663196087711,
+        "recall": 0.8199249128452668,
+        "f1-score": 0.886424585054722,
+        "support": 7458.0
+      },
+      "Normal": {
+        "precision": 0.7050994466876028,
+        "recall": 0.9708637907958406,
+        "f1-score": 0.8169099493221293,
+        "support": 9713.0
+      },
+      "Probe": {
+        "precision": 0.8102409638554217,
+        "recall": 0.7777777777777778,
+        "f1-score": 0.793677555321391,
+        "support": 2421.0
+      },
+      "R2L": {
+        "precision": 0.973568281938326,
+        "recall": 0.1532062391681109,
+        "f1-score": 0.2647499251272836,
+        "support": 2885.0
+      },
+      "U2R": {
+        "precision": 0.2641509433962264,
+        "recall": 0.208955223880597,
+        "f1-score": 0.23333333333333334,
+        "support": 67.0
+      },
+      "accuracy": 0.7932931156848829,
+      "macro avg": {
+        "precision": 0.7435445663930575,
+        "recall": 0.5861455888935188,
+        "f1-score": 0.5990190696317719,
+        "support": 22544.0
+      },
+      "weighted avg": {
+        "precision": 0.8353054037523258,
+        "recall": 0.7932931156848829,
+        "f1-score": 0.7650164621124288,
+        "support": 22544.0
+      }
+    }
+  }
+}

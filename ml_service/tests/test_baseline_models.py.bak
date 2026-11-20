@@ -1,0 +1,81 @@
+"""
+NetShield Phase 4 Validation Test Suite
+Automated tests verifying baseline model serialization, reloading, prediction shapes, and zero NaNs.
+"""
+
+import os
+import sys
+import json
+import joblib
+import numpy as np
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+PROCESSED_DATA_DIR = os.path.join(PROJECT_ROOT, "data", "processed")
+ARTIFACTS_DIR = os.path.join(PROJECT_ROOT, "artifacts")
+BASELINE_DIR = os.path.join(ARTIFACTS_DIR, "models", "baseline")
+
+
+def test_nsl_kdd_baseline_models():
+    """1. Verify NSL-KDD baseline models reload and produce valid predictions."""
+    model_names = [
+        "nsl_kdd_logistic_regression.joblib",
+        "nsl_kdd_decision_tree.joblib",
+        "nsl_kdd_gaussian_naive_bayes.joblib"
+    ]
+
+    test_npz = os.path.join(PROCESSED_DATA_DIR, "nsl_kdd", "test_reduced.npz")
+    test_data = np.load(test_npz)
+    X_test, y_test = test_data['X'], test_data['y_5class']
+
+    assert X_test.shape[1] == 37, f"Expected 37 features for NSL-KDD reduced set, got {X_test.shape[1]}"
+
+    for m_file in model_names:
+        m_path = os.path.join(BASELINE_DIR, m_file)
+        assert os.path.exists(m_path), f"Baseline model file missing: {m_file}"
+
+        model = joblib.load(m_path)
+        assert hasattr(model, "predict"), f"Loaded object {m_file} is not a valid predictor!"
+
+        preds = model.predict(X_test)
+        assert len(preds) == len(y_test), f"Prediction count mismatch for {m_file}"
+        assert not np.isnan(preds).any(), f"NaN predictions detected for {m_file}"
+
+
+def test_cicids2017_baseline_models():
+    """2. Verify CICIDS2017 baseline models reload and produce valid predictions."""
+    model_names = [
+        "cicids2017_logistic_regression.joblib",
+        "cicids2017_decision_tree.joblib",
+        "cicids2017_gaussian_naive_bayes.joblib"
+    ]
+
+    test_npz = os.path.join(PROCESSED_DATA_DIR, "cicids2017", "test_reduced.npz")
+    test_data = np.load(test_npz)
+    X_test, y_test = test_data['X'], test_data['y']
+
+    assert X_test.shape[1] == 43, f"Expected 43 features for CICIDS2017 reduced set, got {X_test.shape[1]}"
+
+    X_sub = X_test[:1000]
+
+    for m_file in model_names:
+        m_path = os.path.join(BASELINE_DIR, m_file)
+        assert os.path.exists(m_path), f"Baseline model file missing: {m_file}"
+
+        model = joblib.load(m_path)
+        assert hasattr(model, "predict"), f"Loaded object {m_file} is not a valid predictor!"
+
+        preds = model.predict(X_sub)
+        assert len(preds) == 1000, f"Prediction count mismatch for {m_file}"
+        assert not np.isnan(preds).any(), f"NaN predictions detected for {m_file}"
+
+
+def test_baseline_eval_metadata():
+    """3. Verify baseline evaluation metadata JSON files."""
+    meta_path = os.path.join(ARTIFACTS_DIR, "metadata", "baseline_models_metadata.json")
+    assert os.path.exists(meta_path), "baseline_models_metadata.json missing!"
+
+    with open(meta_path, "r") as f:
+        meta = json.load(f)
+
+    assert "nsl_kdd" in meta, "NSL-KDD baseline evaluation metadata missing!"
+    assert "cicids2017" in meta, "CICIDS2017 baseline evaluation metadata missing!"

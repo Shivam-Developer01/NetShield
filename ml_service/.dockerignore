@@ -1,0 +1,34 @@
+# Ignore Python cache & temporary build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ignore raw and processed datasets (never bake training data into production images)
+data/
+data/raw/
+data/processed/
+
+# Ignore intermediate model training artifacts (only artifacts/production is baked)
+artifacts/models/
+artifacts/metadata/
+artifacts/encoders/
+artifacts/preprocessors/
+artifacts/features/
+
+# Ignore development environment files and secrets
+.env
+.env.local
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Ignore node modules and frontend/backend source
+node_modules/
+backend/
+frontend/
+scratch/

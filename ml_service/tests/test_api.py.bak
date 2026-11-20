@@ -1,0 +1,134 @@
+"""
+NetShield Phase 7 API Validation Test Suite
+Uses FastAPI TestClient to test /health, /model-info, /predict, CORS,
+and input validation (invalid dataset, missing features, NaN/Inf values).
+"""
+
+import sys
+import os
+import pandas as pd
+from fastapi.testclient import TestClient
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+API_SRC_DIR = os.path.join(PROJECT_ROOT, "ml_service", "src", "api")
+INFERENCE_SRC_DIR = os.path.join(PROJECT_ROOT, "ml_service", "src", "inference")
+
+for d in [API_SRC_DIR, INFERENCE_SRC_DIR]:
+    if d not in sys.path:
+        sys.path.append(d)
+
+from app import app
+
+client = TestClient(app)
+
+
+def test_api_health_endpoint():
+    """1. Test GET /health returns HTTP 200 and healthy status."""
+    response = client.get("/health")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["status"] == "healthy"
+    assert "nsl_kdd" in data["loaded_datasets"]
+    assert "cicids2017" in data["loaded_datasets"]
+
+
+def test_api_model_info_endpoint():
+    """2. Test GET /model-info returns metadata for both production models."""
+    response = client.get("/model-info")
+    assert response.status_code == 200
+    data = response.json()
+    assert "models" in data
+    assert "nsl_kdd" in data["models"]
+    assert "cicids2017" in data["models"]
+
+    nsl_meta = data["models"]["nsl_kdd"]
+    assert nsl_meta["model_version"] == "NetShield-NSLKDD-ExpertEnsemble-v1.3"
+    assert nsl_meta["feature_count"] == 134
+
+    cic_meta = data["models"]["cicids2017"]
+    assert cic_meta["model_version"] == "NetShield-CICIDS2017-TwoStage-v1.2"
+    assert cic_meta["feature_count"] == 56
+
+
+def test_api_predict_nsl_kdd_valid():
+    """3. Test POST /predict with valid NSL-KDD record."""
+    sample_payload = {
+        "dataset_type": "nsl_kdd",
+        "input_data": {
+            "duration": 0, "protocol_type": "tcp", "service": "http", "flag": "SF",
+            "src_bytes": 215, "dst_bytes": 4507, "land": 0, "wrong_fragment": 0,
+            "urgent": 0, "hot": 0, "num_failed_logins": 0, "logged_in": 1,
+            "num_compromised": 0, "root_shell": 0, "su_attempted": 0, "num_root": 0,
+            "num_file_creations": 0, "num_shells": 0, "num_access_files": 0,
+            "num_outbound_cmds": 0, "is_host_login": 0, "is_guest_login": 0,
+            "count": 1, "srv_count": 1, "serror_rate": 0.0, "srv_serror_rate": 0.0,
+            "rerror_rate": 0.0, "srv_rerror_rate": 0.0, "same_srv_rate": 1.0,
+            "diff_srv_rate": 0.0, "srv_diff_host_rate": 0.0, "dst_host_count": 255,
+            "dst_host_srv_count": 255, "dst_host_same_srv_rate": 1.0,
+            "dst_host_diff_srv_rate": 0.0, "dst_host_same_src_port_rate": 0.0,
+            "dst_host_srv_diff_host_rate": 0.0, "dst_host_serror_rate": 0.0,
+            "dst_host_srv_serror_rate": 0.0, "dst_host_rerror_rate": 0.0,
+            "dst_host_srv_rerror_rate": 0.0
+        }
+    }
+
+    response = client.post("/predict", json=sample_payload)
+    assert response.status_code == 200, f"Predict failed with {response.status_code}: {response.json()}"
+    data = response.json()
+
+    assert data["dataset_type"] == "nsl_kdd"
+    assert data["model_version"] == "NetShield-NSLKDD-ExpertEnsemble-v1.3"
+    assert data["records_processed"] == 1
+    assert len(data["predictions"]) == 1
+
+    pred = data["predictions"][0]
+    assert pred["prediction"] in ["Normal", "DoS", "Probe", "R2L", "U2R"]
+    assert 0.0 <= pred["confidence"] <= 1.0
+
+
+def test_api_predict_cicids2017_valid():
+    """4. Test POST /predict with valid CICIDS2017 record read from raw dataset."""
+    raw_csv_path = os.path.join(PROJECT_ROOT, "data", "raw", "Monday-WorkingHours.pcap_ISCX.csv")
+    df_sample = pd.read_csv(raw_csv_path, nrows=1)
+    feature_cols = [c.strip() for c in df_sample.columns if c.strip() != "Label"]
+    df_features = df_sample.copy()
+    df_features.columns = [c.strip() for c in df_features.columns]
+
+    record_dict = df_features[feature_cols].iloc[0].to_dict()
+
+    sample_payload = {
+        "dataset_type": "cicids2017",
+        "input_data": record_dict
+    }
+
+    response = client.post("/predict", json=sample_payload)
+    assert response.status_code == 200, f"Predict failed with {response.status_code}: {response.json()}"
+    data = response.json()
+
+    assert data["dataset_type"] == "cicids2017"
+    assert data["model_version"] == "NetShield-CICIDS2017-TwoStage-v1.2"
+    assert len(data["predictions"]) == 1
+
+    pred = data["predictions"][0]
+    assert isinstance(pred["prediction"], str)
+    assert 0.0 <= pred["confidence"] <= 1.0
+
+
+def test_api_predict_invalid_dataset_type():
+    """5. Test POST /predict rejects unknown dataset_type with HTTP 422."""
+    payload = {
+        "dataset_type": "unknown_dataset",
+        "input_data": {"duration": 0}
+    }
+    response = client.post("/predict", json=payload)
+    assert response.status_code == 422
+
+
+def test_api_predict_nan_inf_rejected():
+    """6. Test POST /predict rejects invalid empty or None inputs with HTTP 422."""
+    payload = {
+        "dataset_type": "nsl_kdd",
+        "input_data": {}
+    }
+    response = client.post("/predict", json=payload)
+    assert response.status_code == 422

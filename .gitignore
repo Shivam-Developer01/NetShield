@@ -1,0 +1,136 @@
+# ==============================================================================
+# NetShield V1 — Root .gitignore Specification
+# Protects secrets, credentials, databases, caches, and large binary datasets
+# while explicitly preserving production models and required test fixtures.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.cert
+*.pfx
+*.p12
+
+# ------------------------------------------------------------------------------
+# 2. Operating System & Editor Files
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# ------------------------------------------------------------------------------
+# 3. Python Artifacts & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ------------------------------------------------------------------------------
+# 4. Node.js & JavaScript
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+.next/
+.parcel-cache/
+
+# ------------------------------------------------------------------------------
+# 5. Database Backups & Local Data Stores
+# ------------------------------------------------------------------------------
+backups/
+*.sqlite
+*.sqlite3
+*.db
+dump.rdb
+
+# ------------------------------------------------------------------------------
+# 6. Datasets (Preserve directory structure via READMEs, ignore raw/processed)
+# ------------------------------------------------------------------------------
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/README.md
+data/external/*
+!data/external/README.md
+
+# Generated PCAP packet files (preserve required test fixtures)
+*.pcap
+*.pcapng
+!sensor/samples/sample_test.pcap
+
+# ------------------------------------------------------------------------------
+# 7. Browser Test Profiles & Cache Files
+# ------------------------------------------------------------------------------
+**/chrome_cdp_profile/
+chrome_cdp_profile/
+.cache/
+
+# ------------------------------------------------------------------------------
+# 8. ML Model Artifacts & Historical Iterations
+#    Explicitly preserves active production models, baselines, and test objects.
+# ------------------------------------------------------------------------------
+# Obsolete intermediate model iterations
+artifacts/v1.2/nsl_kdd/
+artifacts/remediated/
+artifacts/models/ensemble/*.joblib
+
+# Unused binary formats
+artifacts/models/*.pkl
+artifacts/models/*.onnx
+artifacts/models/*.h5
+
+# EXPLICIT RETENTION RULES (DO NOT IGNORE):
+# - artifacts/v1.3/nsl_kdd/          (Active NSL-KDD production bundle)
+# - artifacts/v1.2/cicids2017/       (Active CICIDS2017 production bundle)
+# - artifacts/production/            (Production fallback bundles)
+# - artifacts/models/baseline/       (CI-validated baseline models)
+# - artifacts/preprocessors/         (Preprocessor transformers)
+# - artifacts/features/              (Feature selectors and JSON schemas)
+# - artifacts/encoders/              (Label encoders)
+# - artifacts/metadata/              (JSON benchmark metadata)
+# - All artifacts/**/README.md files
+
+# ------------------------------------------------------------------------------
+# 9. Logs
+# ------------------------------------------------------------------------------
+*.log
+logs/

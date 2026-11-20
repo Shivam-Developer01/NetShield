@@ -1,0 +1,20 @@
+{
+  "nsl_kdd": {
+    "train_samples": 125973,
+    "test_samples": 22544,
+    "train_duplicates": 0,
+    "test_duplicates": 0,
+    "cross_full_overlap": 610,
+    "cross_feature_overlap": 668,
+    "unseen_attack_types_count": 17,
+    "unseen_samples_count": 3750,
+    "unseen_samples_pct": 16.634137686302342
+  },
+  "cicids2017": {
+    "train_samples": 2264594,
+    "test_samples": 566149,
+    "train_sample_dup_pct": 3.09,
+    "test_sample_dup_pct": 3.2680000000000002,
+    "cross_sample_dup_pct": 210.682
+  }
+}

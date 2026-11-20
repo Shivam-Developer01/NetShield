@@ -1,0 +1,83 @@
+{
+  "m1_flat": {
+    "overall_recall": 0.8400139421401185,
+    "benign_fpr": 0.000816144828609586,
+    "unseen_recall": 0.3035007610350076,
+    "breakdown": {
+      "nmap": {
+        "recall": 0.6651038178164769,
+        "count": 1493,
+        "tp": 993
+      },
+      "rootkit": {
+        "recall": 0.3,
+        "count": 10,
+        "tp": 3
+      },
+      "teardrop": {
+        "recall": 0.0011210762331838565,
+        "count": 892,
+        "tp": 1
+      },
+      "warezclient": {
+        "recall": 0.0,
+        "count": 890,
+        "tp": 0
+      }
+    }
+  },
+  "m2_twostage": {
+    "overall_recall": 0.8575810386894388,
+    "benign_fpr": 0.0005193648909333729,
+    "unseen_recall": 0.3811263318112633,
+    "breakdown": {
+      "nmap": {
+        "recall": 0.8345612860013396,
+        "count": 1493,
+        "tp": 1246
+      },
+      "rootkit": {
+        "recall": 0.3,
+        "count": 10,
+        "tp": 3
+      },
+      "teardrop": {
+        "recall": 0.002242152466367713,
+        "count": 892,
+        "tp": 2
+      },
+      "warezclient": {
+        "recall": 0.0011235955056179776,
+        "count": 890,
+        "tp": 1
+      }
+    }
+  },
+  "m3_expert": {
+    "overall_recall": 0.8575810386894388,
+    "benign_fpr": 0.0005935598753524262,
+    "unseen_recall": 0.3811263318112633,
+    "breakdown": {
+      "nmap": {
+        "recall": 0.8345612860013396,
+        "count": 1493,
+        "tp": 1246
+      },
+      "rootkit": {
+        "recall": 0.3,
+        "count": 10,
+        "tp": 3
+      },
+      "teardrop": {
+        "recall": 0.002242152466367713,
+        "count": 892,
+        "tp": 2
+      },
+      "warezclient": {
+        "recall": 0.0011235955056179776,
+        "count": 890,
+        "tp": 1
+      }
+    }
+  }
+}

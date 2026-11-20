@@ -1,0 +1,324 @@
+[
+  {
+    "feature_name": "Bwd Packet Length Mean",
+    "original_index": 12,
+    "mi_score": 0.4847285596253952,
+    "rf_score": 0.10954796732168431,
+    "composite_score": 0.9436930884689179
+  },
+  {
+    "feature_name": "Packet Length Variance",
+    "original_index": 40,
+    "mi_score": 0.53802763716371,
+    "rf_score": 0.08028525277620446,
+    "composite_score": 0.8590155447014278
+  },
+  {
+    "feature_name": "Total Length of Fwd Packets",
+    "original_index": 4,
+    "mi_score": 0.48376743982322945,
+    "rf_score": 0.06850250531247389,
+    "composite_score": 0.7554714723740644
+  },
+  {
+    "feature_name": "Packet Length Mean",
+    "original_index": 38,
+    "mi_score": 0.546121362340737,
+    "rf_score": 0.042920773572005216,
+    "composite_score": 0.6958994251282027
+  },
+  {
+    "feature_name": "Bwd Packet Length Max",
+    "original_index": 10,
+    "mi_score": 0.45471751609084277,
+    "rf_score": 0.054696389928848864,
+    "composite_score": 0.6658141097504902
+  },
+  {
+    "feature_name": "Fwd Packet Length Max",
+    "original_index": 6,
+    "mi_score": 0.4373324601188535,
+    "rf_score": 0.055233625998760985,
+    "composite_score": 0.6523213372575172
+  },
+  {
+    "feature_name": "Max Packet Length",
+    "original_index": 37,
+    "mi_score": 0.4483338806719115,
+    "rf_score": 0.04381602180312848,
+    "composite_score": 0.6102990243453568
+  },
+  {
+    "feature_name": "Init_Win_bytes_forward",
+    "original_index": 58,
+    "mi_score": 0.4793544708417532,
+    "rf_score": 0.036065018649598754,
+    "composite_score": 0.6033725768639778
+  },
+  {
+    "feature_name": "Destination Port",
+    "original_index": 0,
+    "mi_score": 0.4291185231821544,
+    "rf_score": 0.045983330700319194,
+    "composite_score": 0.6025675725601392
+  },
+  {
+    "feature_name": "Init_Win_bytes_backward",
+    "original_index": 59,
+    "mi_score": 0.44858153558273606,
+    "rf_score": 0.027885257745915527,
+    "composite_score": 0.537814806391953
+  },
+  {
+    "feature_name": "Fwd Packet Length Mean",
+    "original_index": 8,
+    "mi_score": 0.37525687240595706,
+    "rf_score": 0.0354036166052336,
+    "composite_score": 0.5048799273423455
+  },
+  {
+    "feature_name": "Flow IAT Max",
+    "original_index": 18,
+    "mi_score": 0.4240926596972483,
+    "rf_score": 0.02310553939283566,
+    "composite_score": 0.49353901583101956
+  },
+  {
+    "feature_name": "Flow IAT Mean",
+    "original_index": 16,
+    "mi_score": 0.36506929554457956,
+    "rf_score": 0.024961389937592584,
+    "composite_score": 0.44787579903311125
+  },
+  {
+    "feature_name": "Bwd Packets/s",
+    "original_index": 35,
+    "mi_score": 0.37097807327017795,
+    "rf_score": 0.02077629301682479,
+    "composite_score": 0.4341934153875092
+  },
+  {
+    "feature_name": "Flow Duration",
+    "original_index": 1,
+    "mi_score": 0.4070198868861834,
+    "rf_score": 0.013047799191429704,
+    "composite_score": 0.4319749569130486
+  },
+  {
+    "feature_name": "Fwd IAT Mean",
+    "original_index": 21,
+    "mi_score": 0.35931105600611035,
+    "rf_score": 0.018245448673085966,
+    "composite_score": 0.4119416197493372
+  },
+  {
+    "feature_name": "Total Fwd Packets",
+    "original_index": 2,
+    "mi_score": 0.24407777117390395,
+    "rf_score": 0.04128700378169565,
+    "composite_score": 0.4114210740277903
+  },
+  {
+    "feature_name": "Flow Bytes/s",
+    "original_index": 14,
+    "mi_score": 0.39737388297354603,
+    "rf_score": 0.008485722818422914,
+    "composite_score": 0.4023057783780387
+  },
+  {
+    "feature_name": "Fwd IAT Std",
+    "original_index": 22,
+    "mi_score": 0.2836477322387052,
+    "rf_score": 0.030518507668858202,
+    "composite_score": 0.3985632721412371
+  },
+  {
+    "feature_name": "Flow Packets/s",
+    "original_index": 15,
+    "mi_score": 0.3617792989840096,
+    "rf_score": 0.01390581421337975,
+    "composite_score": 0.39439838275190187
+  },
+  {
+    "feature_name": "Bwd Packet Length Min",
+    "original_index": 11,
+    "mi_score": 0.22586895453191458,
+    "rf_score": 0.03851202523370125,
+    "composite_score": 0.3820551395487805
+  },
+  {
+    "feature_name": "Flow IAT Std",
+    "original_index": 17,
+    "mi_score": 0.30390307855120646,
+    "rf_score": 0.02058340985917807,
+    "composite_score": 0.3717947355530906
+  },
+  {
+    "feature_name": "Fwd Packet Length Std",
+    "original_index": 9,
+    "mi_score": 0.26045520121821775,
+    "rf_score": 0.016847227749178417,
+    "composite_score": 0.31489347736384193
+  },
+  {
+    "feature_name": "min_seg_size_forward",
+    "original_index": 61,
+    "mi_score": 0.20730704611739936,
+    "rf_score": 0.018560498377413026,
+    "composite_score": 0.2739679866776139
+  },
+  {
+    "feature_name": "Bwd IAT Max",
+    "original_index": 28,
+    "mi_score": 0.2682834224213855,
+    "rf_score": 0.0030032156307816995,
+    "composite_score": 0.25888620563683873
+  },
+  {
+    "feature_name": "Bwd IAT Total",
+    "original_index": 25,
+    "mi_score": 0.2543536661205208,
+    "rf_score": 0.005238942762978305,
+    "composite_score": 0.25631475673616416
+  },
+  {
+    "feature_name": "Bwd IAT Mean",
+    "original_index": 26,
+    "mi_score": 0.23905287473248737,
+    "rf_score": 0.004045274147925151,
+    "composite_score": 0.2368333698161179
+  },
+  {
+    "feature_name": "Fwd IAT Min",
+    "original_index": 24,
+    "mi_score": 0.19194347462755945,
+    "rf_score": 0.0070356125685370864,
+    "composite_score": 0.2072751732087341
+  },
+  {
+    "feature_name": "Fwd Packet Length Min",
+    "original_index": 7,
+    "mi_score": 0.1794271295853025,
+    "rf_score": 0.008077783584647065,
+    "composite_score": 0.20055240370264288
+  },
+  {
+    "feature_name": "Active Min",
+    "original_index": 65,
+    "mi_score": 0.1843214582241417,
+    "rf_score": 0.006633209393898986,
+    "composite_score": 0.1984479325899875
+  },
+  {
+    "feature_name": "Bwd IAT Std",
+    "original_index": 27,
+    "mi_score": 0.19163895265114794,
+    "rf_score": 0.00449666044791598,
+    "composite_score": 0.19540756738635606
+  },
+  {
+    "feature_name": "Flow IAT Min",
+    "original_index": 19,
+    "mi_score": 0.1724939487845052,
+    "rf_score": 0.008263054035251351,
+    "composite_score": 0.195039199659018
+  },
+  {
+    "feature_name": "Bwd IAT Min",
+    "original_index": 29,
+    "mi_score": 0.18548071855607007,
+    "rf_score": 0.005540238004176769,
+    "composite_score": 0.19452260544695704
+  },
+  {
+    "feature_name": "Active Max",
+    "original_index": 64,
+    "mi_score": 0.18556442309045784,
+    "rf_score": 0.00471534232050936,
+    "composite_score": 0.19083437834372735
+  },
+  {
+    "feature_name": "Min Packet Length",
+    "original_index": 36,
+    "mi_score": 0.18170915273323285,
+    "rf_score": 0.004501467180684447,
+    "composite_score": 0.1863223179175003
+  },
+  {
+    "feature_name": "Active Mean",
+    "original_index": 62,
+    "mi_score": 0.18374290755385148,
+    "rf_score": 0.0037499353896856672,
+    "composite_score": 0.18475744188528573
+  },
+  {
+    "feature_name": "PSH Flag Count",
+    "original_index": 44,
+    "mi_score": 0.10063233258856874,
+    "rf_score": 0.01952143625102833,
+    "composite_score": 0.18051641772322974
+  },
+  {
+    "feature_name": "ACK Flag Count",
+    "original_index": 45,
+    "mi_score": 0.057568503096178114,
+    "rf_score": 0.014554223311661786,
+    "composite_score": 0.11834870829296211
+  },
+  {
+    "feature_name": "Down/Up Ratio",
+    "original_index": 49,
+    "mi_score": 0.06639376837374411,
+    "rf_score": 0.00472648713718263,
+    "composite_score": 0.08158701060465734
+  },
+  {
+    "feature_name": "FIN Flag Count",
+    "original_index": 41,
+    "mi_score": 0.036591325869465674,
+    "rf_score": 0.0018054393839242666,
+    "composite_score": 0.04092120705693203
+  },
+  {
+    "feature_name": "Idle Std",
+    "original_index": 67,
+    "mi_score": 0.03764447098580037,
+    "rf_score": 0.0011083933522713875,
+    "composite_score": 0.038705642144145784
+  },
+  {
+    "feature_name": "URG Flag Count",
+    "original_index": 46,
+    "mi_score": 0.02267159004589603,
+    "rf_score": 0.0018788247039546512,
+    "composite_score": 0.02848956586590791
+  },
+  {
+    "feature_name": "Active Std",
+    "original_index": 63,
+    "mi_score": 0.020045497687119607,
+    "rf_score": 0.0008330445023990264,
+    "composite_score": 0.021307865402238786
+  },
+  {
+    "feature_name": "Fwd PSH Flags",
+    "original_index": 30,
+    "mi_score": 0.014109891948420827,
+    "rf_score": 0.0010949755628166377,
+    "composite_score": 0.01705948974204457
+  },
+  {
+    "feature_name": "RST Flag Count",
+    "original_index": 43,
+    "mi_score": 0.0026350539109658566,
+    "rf_score": 0.0,
+    "composite_score": 0.0015375596780054946
+  },
+  {
+    "feature_name": "Fwd URG Flags",
+    "original_index": 31,
+    "mi_score": 0.0009586133586436674,
+    "rf_score": 0.0,
+    "composite_score": 0.0
+  }
+]
