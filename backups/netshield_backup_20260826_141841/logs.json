@@ -1,0 +1,719 @@
+[
+  {
+    "_id": "6a8e8ec895922703ce8670ff",
+    "timestamp": {
+      "$date": "2026-08-26T06:59:20.502000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 68,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e94aaa045b87f603b91c7",
+    "timestamp": {
+      "$date": "2026-08-26T07:24:26.395000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 829,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e94cfc48839ce0a414ad0",
+    "timestamp": {
+      "$date": "2026-08-26T07:25:03.207000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 61,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8e94cfc48839ce0a414ad2",
+    "timestamp": {
+      "$date": "2026-08-26T07:25:03.260000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "DoS",
+    "predictionIndex": 0,
+    "confidence": 0.9999486207962036,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 0.9999486207962036,
+      "Normal": 3.592129360185936e-05,
+      "Probe": 1.3424573808151763e-05,
+      "R2L": 1.7826500879891682e-06,
+      "U2R": 2.0593678584646113e-07
+    },
+    "processingLatencyMs": 35,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8e97f2f5e2d1f019d52c6d",
+    "timestamp": {
+      "$date": "2026-08-26T07:38:26.793000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 85,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e98af6142240a04feb4d8",
+    "timestamp": {
+      "$date": "2026-08-26T07:41:35.227000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 38,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8e9ba63ee854acff0fca9e",
+    "timestamp": {
+      "$date": "2026-08-26T07:54:14.693000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 63,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e9bd2ce271bac301ad2e2",
+    "timestamp": {
+      "$date": "2026-08-26T07:54:58.348000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 31,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e9bfe5f6e667c7b2ef95e",
+    "timestamp": {
+      "$date": "2026-08-26T07:55:42.225000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 39,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e9c2dd78a63c6de415aa5",
+    "timestamp": {
+      "$date": "2026-08-26T07:56:29.118000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 26,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e9c5fcbeb0812f89c697a",
+    "timestamp": {
+      "$date": "2026-08-26T07:57:19.421000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 29,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e9cba0a8121486048b26e",
+    "timestamp": {
+      "$date": "2026-08-26T07:58:50.088000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 17,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8e9fcc05b75ebdf4d49a98",
+    "timestamp": {
+      "$date": "2026-08-26T08:11:56.268000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 40,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8e9ffc2f23f579ed5d575d",
+    "timestamp": {
+      "$date": "2026-08-26T08:12:44.995000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 45,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8ea02f4821fe7a9f259806",
+    "timestamp": {
+      "$date": "2026-08-26T08:13:35.603000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 40,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  },
+  {
+    "_id": "6a8ea074a16698f3bbee8456",
+    "timestamp": {
+      "$date": "2026-08-26T08:14:44.832000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 18,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea074a16698f3bbee8459",
+    "timestamp": {
+      "$date": "2026-08-26T08:14:44.882000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "DoS",
+    "predictionIndex": 0,
+    "confidence": 0.9999486207962036,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 0.9999486207962036,
+      "Normal": 3.592129360185936e-05,
+      "Probe": 1.3424573808151763e-05,
+      "R2L": 1.7826500879891682e-06,
+      "U2R": 2.0593678584646113e-07
+    },
+    "processingLatencyMs": 40,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0a0a16698f3bbee8461",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:28.454000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 18,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0a0a16698f3bbee8464",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:28.476000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "DoS",
+    "predictionIndex": 0,
+    "confidence": 0.9999486207962036,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 0.9999486207962036,
+      "Normal": 3.592129360185936e-05,
+      "Probe": 1.3424573808151763e-05,
+      "R2L": 1.7826500879891682e-06,
+      "U2R": 2.0593678584646113e-07
+    },
+    "processingLatencyMs": 15,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0aea16698f3bbee846c",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:42.452000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 30,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0aea16698f3bbee846f",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:42.471000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "DoS",
+    "predictionIndex": 0,
+    "confidence": 0.9999486207962036,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 0.9999486207962036,
+      "Normal": 3.592129360185936e-05,
+      "Probe": 1.3424573808151763e-05,
+      "R2L": 1.7826500879891682e-06,
+      "U2R": 2.0593678584646113e-07
+    },
+    "processingLatencyMs": 13,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0bda16698f3bbee8477",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:57.270000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 16,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0bda16698f3bbee847a",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:57.295000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "DoS",
+    "predictionIndex": 0,
+    "confidence": 0.9999486207962036,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 0.9999486207962036,
+      "Normal": 3.592129360185936e-05,
+      "Probe": 1.3424573808151763e-05,
+      "R2L": 1.7826500879891682e-06,
+      "U2R": 2.0593678584646113e-07
+    },
+    "processingLatencyMs": 18,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0bda16698f3bbee847f",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:57.481000"
+    },
+    "datasetType": "cicids2017",
+    "prediction": "BENIGN",
+    "predictionIndex": 0,
+    "confidence": 0.9981924891471863,
+    "modelVersion": "NetShield-CICIDS2017-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "BENIGN": 0.9981924891471863,
+      "Bot": 7.0162145675567444e-06,
+      "DDoS": 0.00046100738109089434,
+      "DoS GoldenEye": 3.18350903398823e-05,
+      "DoS Hulk": 0.0007141328533180058,
+      "DoS Slowhttptest": 1.838208845583722e-05,
+      "DoS slowloris": 1.9275914382888004e-05,
+      "FTP-Patator": 2.585514994279947e-05,
+      "Heartbleed": 6.6556816591401e-07,
+      "Infiltration": 4.308464667701628e-06,
+      "PortScan": 0.0004950002185069025,
+      "SSH-Patator": 1.8256439943797886e-05,
+      "Web Attack \ufffd Brute Force": 5.347232672647806e-06,
+      "Web Attack \ufffd Sql Injection": 7.577114615742175e-07,
+      "Web Attack \ufffd XSS": 5.708424851036398e-06
+    },
+    "processingLatencyMs": 177,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0caa16698f3bbee8484",
+    "timestamp": {
+      "$date": "2026-08-26T08:16:10.105000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 155,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0caa16698f3bbee8487",
+    "timestamp": {
+      "$date": "2026-08-26T08:16:10.125000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "DoS",
+    "predictionIndex": 0,
+    "confidence": 0.9999486207962036,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 0.9999486207962036,
+      "Normal": 3.592129360185936e-05,
+      "Probe": 1.3424573808151763e-05,
+      "R2L": 1.7826500879891682e-06,
+      "U2R": 2.0593678584646113e-07
+    },
+    "processingLatencyMs": 13,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea0caa16698f3bbee848c",
+    "timestamp": {
+      "$date": "2026-08-26T08:16:10.147000"
+    },
+    "datasetType": "cicids2017",
+    "prediction": "BENIGN",
+    "predictionIndex": 0,
+    "confidence": 0.9981924891471863,
+    "modelVersion": "NetShield-CICIDS2017-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "BENIGN": 0.9981924891471863,
+      "Bot": 7.0162145675567444e-06,
+      "DDoS": 0.00046100738109089434,
+      "DoS GoldenEye": 3.18350903398823e-05,
+      "DoS Hulk": 0.0007141328533180058,
+      "DoS Slowhttptest": 1.838208845583722e-05,
+      "DoS slowloris": 1.9275914382888004e-05,
+      "FTP-Patator": 2.585514994279947e-05,
+      "Heartbleed": 6.6556816591401e-07,
+      "Infiltration": 4.308464667701628e-06,
+      "PortScan": 0.0004950002185069025,
+      "SSH-Patator": 1.8256439943797886e-05,
+      "Web Attack \ufffd Brute Force": 5.347232672647806e-06,
+      "Web Attack \ufffd Sql Injection": 7.577114615742175e-07,
+      "Web Attack \ufffd XSS": 5.708424851036398e-06
+    },
+    "processingLatencyMs": 12,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea3729a3f6ffb2541a6a9",
+    "timestamp": {
+      "$date": "2026-08-26T08:27:30.544000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 29,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea3729a3f6ffb2541a6ac",
+    "timestamp": {
+      "$date": "2026-08-26T08:27:30.577000"
+    },
+    "datasetType": "cicids2017",
+    "prediction": "BENIGN",
+    "predictionIndex": 0,
+    "confidence": 0.9981924891471863,
+    "modelVersion": "NetShield-CICIDS2017-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "BENIGN": 0.9981924891471863,
+      "Bot": 7.0162145675567444e-06,
+      "DDoS": 0.00046100738109089434,
+      "DoS GoldenEye": 3.18350903398823e-05,
+      "DoS Hulk": 0.0007141328533180058,
+      "DoS Slowhttptest": 1.838208845583722e-05,
+      "DoS slowloris": 1.9275914382888004e-05,
+      "FTP-Patator": 2.585514994279947e-05,
+      "Heartbleed": 6.6556816591401e-07,
+      "Infiltration": 4.308464667701628e-06,
+      "PortScan": 0.0004950002185069025,
+      "SSH-Patator": 1.8256439943797886e-05,
+      "Web Attack \ufffd Brute Force": 5.347232672647806e-06,
+      "Web Attack \ufffd Sql Injection": 7.577114615742175e-07,
+      "Web Attack \ufffd XSS": 5.708424851036398e-06
+    },
+    "processingLatencyMs": 21,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea3729a3f6ffb2541a6af",
+    "timestamp": {
+      "$date": "2026-08-26T08:27:30.602000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "DoS",
+    "predictionIndex": 0,
+    "confidence": 0.9999486207962036,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 0.9999486207962036,
+      "Normal": 3.592129360185936e-05,
+      "Probe": 1.3424573808151763e-05,
+      "R2L": 1.7826500879891682e-06,
+      "U2R": 2.0593678584646113e-07
+    },
+    "processingLatencyMs": 16,
+    "sourceInfo": null
+  },
+  {
+    "_id": "6a8ea3e08286b7fd3fe3c9a3",
+    "timestamp": {
+      "$date": "2026-08-26T08:29:20.212000"
+    },
+    "datasetType": "nsl_kdd",
+    "prediction": "Normal",
+    "predictionIndex": 1,
+    "confidence": 0.9999591112136841,
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "recordsProcessed": 1,
+    "classProbabilities": {
+      "DoS": 2.3324195353779942e-05,
+      "Normal": 0.9999591112136841,
+      "Probe": 1.0102454325533472e-05,
+      "R2L": 6.449718512158142e-06,
+      "U2R": 1.0423493677080842e-06
+    },
+    "processingLatencyMs": 38,
+    "sourceInfo": {
+      "e2eTest": true,
+      "clientIp": "127.0.0.1"
+    }
+  }
+]

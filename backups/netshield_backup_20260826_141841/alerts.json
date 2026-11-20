@@ -1,0 +1,123 @@
+[
+  {
+    "_id": "6a8e94cfc48839ce0a414ad4",
+    "timestamp": {
+      "$date": "2026-08-26T07:25:03.263000"
+    },
+    "severity": "high",
+    "attackType": "DoS",
+    "prediction": "DoS",
+    "confidence": 0.9999486207962036,
+    "datasetType": "nsl_kdd",
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "status": "open",
+    "description": "Denial of Service attack traffic detected (DoS).",
+    "sourceInfo": null,
+    "acknowledgedAt": null,
+    "resolvedAt": null
+  },
+  {
+    "_id": "6a8ea074a16698f3bbee845b",
+    "timestamp": {
+      "$date": "2026-08-26T08:14:44.885000"
+    },
+    "severity": "high",
+    "attackType": "DoS",
+    "prediction": "DoS",
+    "confidence": 0.9999486207962036,
+    "datasetType": "nsl_kdd",
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "status": "open",
+    "description": "Denial of Service attack traffic detected (DoS).",
+    "sourceInfo": null,
+    "acknowledgedAt": null,
+    "resolvedAt": null
+  },
+  {
+    "_id": "6a8ea0a0a16698f3bbee8466",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:28.479000"
+    },
+    "severity": "high",
+    "attackType": "DoS",
+    "prediction": "DoS",
+    "confidence": 0.9999486207962036,
+    "datasetType": "nsl_kdd",
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "status": "open",
+    "description": "Denial of Service attack traffic detected (DoS).",
+    "sourceInfo": null,
+    "acknowledgedAt": null,
+    "resolvedAt": null
+  },
+  {
+    "_id": "6a8ea0aea16698f3bbee8471",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:42.473000"
+    },
+    "severity": "high",
+    "attackType": "DoS",
+    "prediction": "DoS",
+    "confidence": 0.9999486207962036,
+    "datasetType": "nsl_kdd",
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "status": "open",
+    "description": "Denial of Service attack traffic detected (DoS).",
+    "sourceInfo": null,
+    "acknowledgedAt": null,
+    "resolvedAt": null
+  },
+  {
+    "_id": "6a8ea0bda16698f3bbee847c",
+    "timestamp": {
+      "$date": "2026-08-26T08:15:57.297000"
+    },
+    "severity": "high",
+    "attackType": "DoS",
+    "prediction": "DoS",
+    "confidence": 0.9999486207962036,
+    "datasetType": "nsl_kdd",
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "status": "open",
+    "description": "Denial of Service attack traffic detected (DoS).",
+    "sourceInfo": null,
+    "acknowledgedAt": null,
+    "resolvedAt": null
+  },
+  {
+    "_id": "6a8ea0caa16698f3bbee8489",
+    "timestamp": {
+      "$date": "2026-08-26T08:16:10.128000"
+    },
+    "severity": "high",
+    "attackType": "DoS",
+    "prediction": "DoS",
+    "confidence": 0.9999486207962036,
+    "datasetType": "nsl_kdd",
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "status": "open",
+    "description": "Denial of Service attack traffic detected (DoS).",
+    "sourceInfo": null,
+    "acknowledgedAt": null,
+    "resolvedAt": null
+  },
+  {
+    "_id": "6a8ea3729a3f6ffb2541a6b1",
+    "timestamp": {
+      "$date": "2026-08-26T08:27:30.604000"
+    },
+    "severity": "high",
+    "attackType": "DoS",
+    "prediction": "DoS",
+    "confidence": 0.9999486207962036,
+    "datasetType": "nsl_kdd",
+    "modelVersion": "NetShield-NSLKDD-XGBoost-v1.0",
+    "status": "acknowledged",
+    "description": "Denial of Service attack traffic detected (DoS).",
+    "sourceInfo": null,
+    "acknowledgedAt": {
+      "$date": "2026-08-26T08:27:30.613000"
+    },
+    "resolvedAt": null
+  }
+]

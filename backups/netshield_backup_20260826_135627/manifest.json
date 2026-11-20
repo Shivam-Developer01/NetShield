@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-26T13:56:27.685297",
+  "database": "netshield_db",
+  "collections": {
+    "logs": 27,
+    "alerts": 6,
+    "users": 4,
+    "settings": 1,
+    "systemmetrics": 0
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "6a8e987bb35a5688cb7b7cb5",
+    "username": "sysadmin",
+    "email": "admin@netshield.local",
+    "passwordHash": "$2b$10$asW.3PosyqXXR9cfEyKwL.WLm0VAxIEFeXRt3tBlQdlIVOYE57lUG",
+    "role": "ADMIN",
+    "isActive": true,
+    "lastLoginAt": {
+      "$date": "2026-08-26T08:27:30.486000"
+    },
+    "createdAt": {
+      "$date": "2026-08-26T07:40:43.076000"
+    },
+    "updatedAt": {
+      "$date": "2026-08-26T08:27:30.492000"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6a8e98ae6142240a04feb4bb",
+    "username": "admin_user",
+    "email": "admin_e2e@netshield.local",
+    "passwordHash": "$2b$10$zxymsp9C.tR6XoOKGuSOU.V.IEZ1bHS6EL/G7awRLFDRqHiCUn5X2",
+    "role": "ADMIN",
+    "isActive": true,
+    "lastLoginAt": null,
+    "createdAt": {
+      "$date": "2026-08-26T07:41:34.683000"
+    },
+    "updatedAt": {
+      "$date": "2026-08-26T07:41:34.986000"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6a8e98ae6142240a04feb4be",
+    "username": "analyst_user",
+    "email": "analyst_e2e@netshield.local",
+    "passwordHash": "$2b$10$rNx9rMwHX1PXoTjcPM9p6OXSE6get/W77uYDVxll920bTOoR4siCi",
+    "role": "ANALYST",
+    "isActive": true,
+    "lastLoginAt": {
+      "$date": "2026-08-26T07:41:35.070000"
+    },
+    "createdAt": {
+      "$date": "2026-08-26T07:41:34.767000"
+    },
+    "updatedAt": {
+      "$date": "2026-08-26T07:41:35.071000"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6a8e98ae6142240a04feb4c1",
+    "username": "viewer_user",
+    "email": "viewer_e2e@netshield.local",
+    "passwordHash": "$2b$10$PhLRCqPuhDbMWaKGngOKweEhyHmoHm90W9KmRPhMkbwwTUYq5pXVq",
+    "role": "VIEWER",
+    "isActive": true,
+    "lastLoginAt": {
+      "$date": "2026-08-26T07:41:35.149000"
+    },
+    "createdAt": {
+      "$date": "2026-08-26T07:41:34.851000"
+    },
+    "updatedAt": {
+      "$date": "2026-08-26T07:41:35.149000"
+    },
+    "__v": 0
+  }
+]
